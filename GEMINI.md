@@ -10,4 +10,5 @@
 ## i18n
 - **Framework**: `next-intl` with App Router.
 - **Locales**: English (`en`) and Vietnamese (`vi`).
-- **Static Export**: The project is configured for static export (`output: 'export'`). Avoid features that require a dynamic Node.js runtime (like non-static `headers()` or `cookies()`) without appropriate static generation fallbacks.
+- **Routing**: Uses `src/proxy.ts` (deprecated `middleware.ts`) for locale detection and routing.
+- **Static Export**: The project is configured for static export (`output: 'export''). Avoid features that require a dynamic Node.js runtime (like non-static `headers()` or `cookies()`) without appropriate static generation fallbacks.
