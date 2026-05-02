@@ -3,9 +3,14 @@ import createNextIntlPlugin from 'next-intl/plugin';
 // Use a relative path as required by Turbopack
 const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
+// Set by actions/configure-pages when deploying to GitHub Pages project site
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath,
+  assetPrefix: basePath || undefined,
 };
 
 let config = withNextIntl(nextConfig);

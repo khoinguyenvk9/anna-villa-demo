@@ -66,7 +66,7 @@ async function AmenitiesContent({params}: {params: Promise<{locale: string}>}) {
               className="object-cover shadow-2xl rounded-lg"
             />
             <div className="absolute -bottom-8 -left-8 bg-primary-container p-10 text-white hidden lg:block max-w-xs border border-white/10 rounded-lg">
-              <p className="font-serif italic text-xl mb-4 text-on-primary">"{t('intro.testimonial')}"</p>
+              <p className="font-serif italic text-xl mb-4 text-on-primary">&ldquo;{t('intro.testimonial')}&rdquo;</p>
               <cite className="font-bold text-xs uppercase text-primary-fixed">— {t('intro.author')}</cite>
             </div>
           </div>
