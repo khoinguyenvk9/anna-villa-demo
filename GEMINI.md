@@ -8,7 +8,17 @@
 - **Research Workflow**: Use `google_web_search` and `web_fetch` to consult the official documentation for those specific versions to ensure API compatibility and follow current best practices.
 
 ## i18n
-- **Framework**: `next-intl` with App Router.
-- **Locales**: English (`en`) and Vietnamese (`vi`).
-- **Routing**: Uses `src/proxy.ts` (deprecated `middleware.ts`) for locale detection and routing.
-- **Static Export**: The project is configured for static export (`output: 'export''). Avoid features that require a dynamic Node.js runtime (like non-static `headers()` or `cookies()`) without appropriate static generation fallbacks.
+├── messages/
+│   ├── en.json
+│   └── vi.json
+├── src/
+│   ├── i18n/
+│   │   ├── routing.ts
+│   │   └── request.ts
+│   ├── proxy.ts (formerly middleware.ts)
+│   └── app/
+│       └── [locale]/
+│           ├── layout.tsx
+│           └── page.tsx
+├── i18n.ts (fallback re-export)
+└── next.config.mjs
