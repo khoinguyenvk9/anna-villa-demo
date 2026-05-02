@@ -12,13 +12,11 @@
 │   ├── en.json
 │   └── vi.json
 ├── src/
+│   ├── i18n.ts (main request config)
 │   ├── i18n/
-│   │   ├── routing.ts
-│   │   └── request.ts
-│   ├── proxy.ts (formerly middleware.ts)
+│   │   └── routing.ts
+│   ├── proxy.ts (Next.js 16 routing)
 │   └── app/
 │       └── [locale]/
-│           ├── layout.tsx
-│           └── page.tsx
-├── i18n.ts (fallback re-export)
-└── next.config.mjs
+├── i18n.ts (root re-export for CI resolution)
+└── next.config.mjs (explicitly pointing to src/i18n.ts)

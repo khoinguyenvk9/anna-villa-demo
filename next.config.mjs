@@ -1,19 +1,22 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin();
+// Use a relative path as required by Turbopack
+const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  images: {
-    unoptimized: true,
-  },
 };
 
-const config = withNextIntl(nextConfig);
+let config = withNextIntl(nextConfig);
 
-// Fix mis-merged experimental key in some CI environments/versions
-if (config.experimental && config.experimental.images) {
+// Manually add images config to the processed config object to avoid mis-merging
+config.images = {
+  unoptimized: true,
+};
+
+// Cleanup experimental keys mis-merged by next-intl in some environments
+if (config.experimental && typeof config.experimental === 'object') {
   delete config.experimental.images;
 }
 
