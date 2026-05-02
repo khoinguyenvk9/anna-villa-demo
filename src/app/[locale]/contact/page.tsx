@@ -21,8 +21,8 @@ async function ContactContent({params}: {params: Promise<{locale: string}>}) {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative h-[614px] flex items-center justify-center overflow-hidden">
+        {/* Hero Section - Full width and bleed into Navbar */}
+        <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxnhIDkuEaVU_-nKnt5OdLHGqOFHz11qZ7_7AU9J5QoLQ9n1Pffw84DjJFT9I77cRO5zZ1w3lOxLxxzKo85E49sIC75vc7IUyNfmBn9m6vZL2Xnau8Ch6TIbv7ozii62Z5miZ1xCJ5E6mHk-u58L_-s8GbxG2Ytx9-aXplITkRBUC7Dc_MURNokeP94SPUxYQ0KtE6NRo_xakML9cI6xF2V6Zfs57MByDH54-JncbPHcSrEj1CCGb8CDlFQwxkljZBJCEpDFCVQWu2"
@@ -127,7 +127,7 @@ async function ContactContent({params}: {params: Promise<{locale: string}>}) {
                   <label className="font-label-md text-primary uppercase">{t('form.requests')}</label>
                   <textarea className="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all resize-none rounded-lg" placeholder={t('form.placeholderRequests')} rows={4}></textarea>
                 </div>
-                <Button className="w-full bg-primary text-white font-label-md py-6 uppercase tracking-widest rounded-lg hover:bg-surface-tint transition-all active:opacity-70">
+                <Button className="h-auto w-full bg-primary text-white font-label-md py-6 uppercase tracking-widest rounded-lg hover:bg-surface-tint transition-all active:opacity-70">
                   {t('form.submit')}
                 </Button>
               </form>

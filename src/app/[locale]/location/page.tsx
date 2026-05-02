@@ -83,7 +83,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
                   </div>
                 </div>
               </div>
-              <Button variant="outline" className="w-full py-8 border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest transition-all rounded-lg">
+              <Button variant="outline" className="h-auto w-full py-8 border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest transition-all rounded-lg">
                 {t('destination.cta')}
               </Button>
             </div>

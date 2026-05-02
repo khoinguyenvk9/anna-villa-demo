@@ -3,6 +3,7 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import {Button} from '@/components/ui/button';
+import {Link} from '@/i18n/routing';
 
 export default function AmenitiesPage({params}: {params: Promise<{locale: string}>}) {
   return (
@@ -21,8 +22,8 @@ async function AmenitiesContent({params}: {params: Promise<{locale: string}>}) {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative h-[614px] flex items-center justify-center overflow-hidden">
+        {/* Hero Section - Full width and bleed into Navbar */}
+        <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3CHIn3E6LFEoXicDEEWMoPS7-MLTMzn-gZwIN_ZeuEuuRzXz-_fEWC2aA2EPBorkdeuKrr71Oy0KHgRGrbHIQOjA_JxD53O2sVJcPoJjxhmduQWQ5bVWQWYz8Qcwpr5U6PUD4QpWYTxi6zPVzN5FnFoqkYdU1d4WgY5TE1gpv1IjxtIovxpBWaDZ2MSsTQNrCbLnt4SqCUqQ4w_jpl-7G3FAZyg5JlLH_F9e7l3asLZAnkuUYwTU6iBaZlpxj63X6Yi7CtTJCYnQ9"

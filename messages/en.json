@@ -6,7 +6,8 @@
     "amenities": "Amenities",
     "contact": "Contact",
     "location": "Location",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "switchLocale": "Tiếng Việt"
   },
   "Footer": {
     "tagline": "Exquisite luxury retreats for the discerning traveler. Experience serenity in the world's most beautiful destinations.",
@@ -15,6 +16,9 @@
     "termsOfService": "Terms of Service",
     "destinations": "Destinations",
     "followUs": "Follow Us",
+    "connect": "Connect",
+    "newsletter": "Join our newsletter",
+    "subscribe": "Subscribe",
     "allRightsReserved": "All rights reserved."
   },
   "HomePage": {
@@ -33,6 +37,55 @@
       "amenity1": "12,000 Sq Ft of Living Space",
       "amenity2": "6 Presidential Suites",
       "amenity3": "Eco-Filtered Solar Energy"
+    },
+    "villas": {
+      "tagline": "Exclusive Portfolio",
+      "title": "Featured Villa Collection",
+      "priceFrom": "From ${price} / night",
+      "viewDetails": "View Details",
+      "items": {
+        "019": {
+          "title": "Villa Sapphire - Ocean Sanctuary",
+          "price": "1,850",
+          "info": "4 BR • 8 Guests • 450 m²",
+          "description": "Nestled on the sun-drenched cliffs, Villa 019 is a masterwork of contemporary Mediterranean architecture. Designed to erase the boundaries between indoor luxury and the vast blue horizon, every room offers panoramic views of the sea."
+        },
+        "057": {
+          "title": "Villa Emerald - Jungle Oasis",
+          "price": "2,100",
+          "info": "5 BR • 10 Guests • 600 m²",
+          "description": "Experience the pinnacle of tropical luxury at Villa 057. Surrounded by lush emerald foliage, this estate blends natural dark wood architecture with high-end modern amenities, creating a serene sanctuary in the heart of nature."
+        }
+      }
+    },
+    "experiences": {
+      "tagline": "Curated Comforts",
+      "title": "Signature Experiences",
+      "pool": {
+        "title": "Infinity Edge Pool",
+        "description": "Heated saltwater pool that disappears into the horizon, surrounded by a private sun terrace and cabanas."
+      },
+      "golf": {
+        "title": "Private Golf Links",
+        "description": "Access to a world-class 9-hole course designed for exclusivity and challenge, with stunning ocean views."
+      },
+      "chef": {
+        "title": "Private Chef Service",
+        "description": "Bespoke culinary journeys prepared daily by our Michelin-trained resident chef using organic local harvest."
+      }
+    },
+    "testimonials": {
+      "tagline": "Guest Impressions",
+      "quote": "A true masterpiece of hospitality. The privacy and the view at Anna Villa are beyond anything we've experienced in the Mediterranean. Truly an unforgettable sanctuary.",
+      "author": "The Alexander Family",
+      "location": "Zurich, Switzerland"
+    },
+    "cta": {
+      "title": "Ready for the Extraordinary?",
+      "subtitle": "Our concierge is standing by to curate your perfect escape. Limited seasonal availability for 2024.",
+      "inquiry": "Inquire Online",
+      "phone": "+1 (800) ANNA-VILLA",
+      "direct": "Direct Inquiries"
     }
   },
   "VillaDetails": {
@@ -75,6 +128,9 @@
       "total": "Total",
       "confirm": "Confirm Booking",
       "noPayment": "No payment charged until confirmation from host"
+    },
+    "similar": {
+      "title": "Other Villa Retreats"
     }
   },
   "Contact": {
@@ -129,7 +185,11 @@
       "azureSuite": "Azure Suite",
       "secretGardens": "Secret Gardens",
       "coastalSerenity": "Coastal Serenity",
-      "gourmetSpace": "Gourmet Space"
+      "jungleOasis": "Jungle Oasis",
+      "emeraldSuite": "Emerald Suite",
+      "tropicalDining": "Tropical Dining",
+      "verdantView": "Verdant View",
+      "sunsetTerrace": "Sunset Terrace"
     },
     "cta": {
       "title": "Ready for Your Exclusive Stay?",

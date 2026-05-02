@@ -6,7 +6,8 @@
     "amenities": "Tiện ích",
     "contact": "Liên hệ",
     "location": "Vị trí",
-    "bookNow": "Đặt ngay"
+    "bookNow": "Đặt ngay",
+    "switchLocale": "English"
   },
   "Footer": {
     "tagline": "Khu nghỉ dưỡng sang trọng dành cho những du khách sành điệu. Trải nghiệm sự yên bình tại những điểm đến đẹp nhất thế giới.",
@@ -15,6 +16,9 @@
     "termsOfService": "Điều khoản dịch vụ",
     "destinations": "Điểm đến",
     "followUs": "Theo dõi chúng tôi",
+    "connect": "Kết nối",
+    "newsletter": "Nhận bản tin của chúng tôi",
+    "subscribe": "Đăng ký",
     "allRightsReserved": "Đã đăng ký bản quyền."
   },
   "HomePage": {
@@ -33,6 +37,55 @@
       "amenity1": "1.100 m² không gian sống",
       "amenity2": "6 dãy phòng tổng thống",
       "amenity3": "Năng lượng mặt trời lọc sinh thái"
+    },
+    "villas": {
+      "tagline": "Danh mục độc quyền",
+      "title": "Bộ sưu tập biệt thự nổi bật",
+      "priceFrom": "Từ ${price} / đêm",
+      "viewDetails": "Xem chi tiết",
+      "items": {
+        "019": {
+          "title": "Villa Sapphire - Thánh địa View Biển",
+          "price": "1.850",
+          "info": "4 PN • 8 Khách • 450 m²",
+          "description": "Nằm trên những vách đá ngập tràn ánh nắng, Villa 019 là một kiệt tác của kiến trúc Địa Trung Hải đương đại. Được thiết kế để xóa nhòa ranh giới giữa sự sang trọng trong nhà và đường chân trời xanh bao la."
+        },
+        "057": {
+          "title": "Villa Emerald - Ốc đảo Nhiệt đới",
+          "price": "2.100",
+          "info": "5 PN • 10 Khách • 600 m²",
+          "description": "Trải nghiệm đỉnh cao của sự sang trọng nhiệt đới tại Villa 057. Được bao quanh bởi tán lá xanh mướt, dinh thự này kết hợp kiến trúc gỗ tối màu tự nhiên với các tiện nghi hiện đại cao cấp."
+        }
+      }
+    },
+    "experiences": {
+      "tagline": "Sự thoải mái được giám tuyển",
+      "title": "Trải nghiệm đặc trưng",
+      "pool": {
+        "title": "Hồ bơi tràn bờ",
+        "description": "Hồ bơi nước mặn có sưởi biến mất vào tận chân trời, được bao quanh bởi sân tắm nắng và nhà lều riêng tư."
+      },
+      "golf": {
+        "title": "Sân Golf riêng tư",
+        "description": "Tiếp cận sân golf 9 lỗ đẳng cấp thế giới được thiết kế cho sự độc bản và thử thách, với tầm nhìn tuyệt đẹp ra đại dương."
+      },
+      "chef": {
+        "title": "Dịch vụ đầu bếp riêng",
+        "description": "Hành trình ẩm thực riêng biệt được chuẩn bị hàng ngày bởi đầu bếp thường trú được đào tạo chuẩn Michelin sử dụng nông sản hữu cơ địa phương."
+      }
+    },
+    "testimonials": {
+      "tagline": "Ấn tượng của khách hàng",
+      "quote": "Một kiệt tác thực sự của lòng hiếu khách. Sự riêng tư và tầm nhìn tại Anna Villa vượt xa bất kỳ điều gì chúng tôi từng trải nghiệm ở Địa Trung Hải. Thực sự là một thánh địa khó quên.",
+      "author": "Gia đình Alexander",
+      "location": "Zurich, Thụy Sĩ"
+    },
+    "cta": {
+      "title": "Sẵn sàng cho sự phi thường?",
+      "subtitle": "Quản gia của chúng tôi luôn sẵn sàng để chuẩn bị cho kỳ nghỉ hoàn hảo của bạn. Số lượng có hạn cho mùa nghỉ dưỡng năm 2024.",
+      "inquiry": "Yêu cầu trực tuyến",
+      "phone": "+1 (800) ANNA-VILLA",
+      "direct": "Yêu cầu trực tiếp"
     }
   },
   "VillaDetails": {
@@ -75,6 +128,9 @@
       "total": "Tổng cộng",
       "confirm": "Xác nhận đặt phòng",
       "noPayment": "Không tính phí cho đến khi chủ nhà xác nhận"
+    },
+    "similar": {
+      "title": "Các biệt thự khác"
     }
   },
   "Contact": {
@@ -129,7 +185,11 @@
       "azureSuite": "Phòng Azure",
       "secretGardens": "Vườn bí mật",
       "coastalSerenity": "Sự yên bình ven biển",
-      "gourmetSpace": "Không gian ẩm thực"
+      "jungleOasis": "Ốc đảo nhiệt đới",
+      "emeraldSuite": "Phòng Emerald",
+      "tropicalDining": "Phòng ăn nhiệt đới",
+      "verdantView": "Tầm nhìn xanh mướt",
+      "sunsetTerrace": "Ban công hoàng hôn"
     },
     "cta": {
       "title": "Sẵn sàng cho kỳ nghỉ độc bản của bạn?",
