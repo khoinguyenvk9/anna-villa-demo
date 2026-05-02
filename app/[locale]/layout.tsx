@@ -1,7 +1,7 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
-import {routing} from '../../src/i18n/routing';
+import {routing} from '../../i18n/routing';
 import {Noto_Serif, Plus_Jakarta_Sans} from 'next/font/google';
 import "./globals.css";
 
