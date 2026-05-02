@@ -4,6 +4,7 @@ import Footer from '@/components/shared/Footer';
 import Image from 'next/image';
 import {Button} from '@/components/ui/button';
 import {Link} from '@/i18n/routing';
+import {getAssetPath} from '@/lib/utils';
 
 export default async function VillasListingPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
@@ -19,7 +20,7 @@ export default async function VillasListingPage({params}: {params: Promise<{loca
         <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/villa/019/main.webp"
+              src={getAssetPath("/images/villa/019/main.webp")}
               alt="Villa Collection"
               fill
               className="object-cover"
@@ -46,7 +47,7 @@ export default async function VillasListingPage({params}: {params: Promise<{loca
               <div key={villa.id} className="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-sky-100/30">
                 <div className="aspect-[16/10] relative overflow-hidden">
                   <Image
-                    src={villa.src}
+                    src={getAssetPath(villa.src)}
                     alt={t(`items.${villa.id}.title`)}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"

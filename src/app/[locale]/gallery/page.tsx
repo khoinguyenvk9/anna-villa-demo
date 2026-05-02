@@ -3,6 +3,8 @@ import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import {Button} from '@/components/ui/button';
 import MainGallery from '@/components/pages/MainGallery';
+import {getAssetPath} from '@/lib/utils';
+import Image from 'next/image';
 
 export default async function GalleryPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
@@ -12,18 +14,18 @@ export default async function GalleryPage({params}: {params: Promise<{locale: st
 
   const galleryItems = [
     // Villa 019 Highlights
-    { id: 'grandLounge', src: '/images/villa/019/_THP0874-HDR.webp', category: 'interior' },
-    { id: 'infinityHorizon', src: '/images/villa/019/main.webp', category: 'exterior' },
-    { id: 'azureSuite', src: '/images/villa/019/_THP1032-HDR.webp', category: 'interior' },
-    { id: 'secretGardens', src: '/images/villa/019/_THP1146.webp', category: 'exterior' },
-    { id: 'coastalSerenity', src: '/images/villa/019/_THP0900-HDR.webp', category: 'area' },
+    { id: 'grandLounge', src: getAssetPath('/images/villa/019/_THP0874-HDR.webp'), category: 'interior' },
+    { id: 'infinityHorizon', src: getAssetPath('/images/villa/019/main.webp'), category: 'exterior' },
+    { id: 'azureSuite', src: getAssetPath('/images/villa/019/_THP1032-HDR.webp'), category: 'interior' },
+    { id: 'secretGardens', src: getAssetPath('/images/villa/019/_THP1146.webp'), category: 'exterior' },
+    { id: 'coastalSerenity', src: getAssetPath('/images/villa/019/_THP0900-HDR.webp'), category: 'area' },
     
     // Villa 057 Highlights
-    { id: 'jungleOasis', src: '/images/villa/057/main.webp', category: 'exterior' },
-    { id: 'emeraldSuite', src: '/images/villa/057/_THP0531-HDR.webp', category: 'interior' },
-    { id: 'tropicalDining', src: '/images/villa/057/_THP0636.webp', category: 'interior' },
-    { id: 'verdantView', src: '/images/villa/057/_THP0722-HDR.webp', category: 'area' },
-    { id: 'sunsetTerrace', src: '/images/villa/057/_THP0547-HDR.webp', category: 'exterior' },
+    { id: 'jungleOasis', src: getAssetPath('/images/villa/057/main.webp'), category: 'exterior' },
+    { id: 'emeraldSuite', src: getAssetPath('/images/villa/057/_THP0531-HDR.webp'), category: 'interior' },
+    { id: 'tropicalDining', src: getAssetPath('/images/villa/057/_THP0636.webp'), category: 'interior' },
+    { id: 'verdantView', src: getAssetPath('/images/villa/057/_THP0722-HDR.webp'), category: 'area' },
+    { id: 'sunsetTerrace', src: getAssetPath('/images/villa/057/_THP0547-HDR.webp'), category: 'exterior' },
   ];
 
   const translations = {
@@ -56,7 +58,7 @@ export default async function GalleryPage({params}: {params: Promise<{locale: st
         <section className="relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-primary/40 z-10"></div>
           <Image
-            src="/images/villa/019/_THP0932-HDR.webp"
+            src={getAssetPath("/images/villa/019/_THP0932-HDR.webp")}
             alt="Atmosphere & Architecture"
             fill
             className="object-cover"
@@ -97,6 +99,3 @@ export default async function GalleryPage({params}: {params: Promise<{locale: st
     </div>
   );
 }
-
-// Add Image import
-import Image from 'next/image';

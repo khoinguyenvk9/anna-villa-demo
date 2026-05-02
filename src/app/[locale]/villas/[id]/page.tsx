@@ -6,6 +6,7 @@ import {Button} from '@/components/ui/button';
 import {notFound} from 'next/navigation';
 import {routing, Link} from '@/i18n/routing';
 import VillaGallery from '@/components/pages/VillaGallery';
+import {getAssetPath} from '@/lib/utils';
 
 const VILLA_DATA = {
   '019': {
@@ -67,10 +68,10 @@ async function VillaDetailsContent({locale, id}: {locale: string, id: keyof type
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Hero Section - Full width and bleed into Navbar */}
         <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden">
           <Image
-            src={`/images/villa/${id}/main.webp`}
+            src={getAssetPath(`/images/villa/${id}/main.webp`)}
             alt={vt(`items.${id}.title`)}
             fill
             className="object-cover"
@@ -107,6 +108,7 @@ async function VillaDetailsContent({locale, id}: {locale: string, id: keyof type
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Main Content Area */}
             <div className="lg:col-span-8 space-y-16">
+              {/* Description */}
               <section>
                 <h2 className="font-headline-md text-3xl text-slate-800 mb-6">{t('description.title')}</h2>
                 <p className="font-body-lg text-on-surface-variant leading-relaxed">
@@ -197,7 +199,7 @@ async function VillaDetailsContent({locale, id}: {locale: string, id: keyof type
                 <div key={villaId} className="group bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-sky-100/30">
                   <div className="aspect-[16/10] relative overflow-hidden">
                     <Image
-                      src={`/images/villa/${villaId}/main.webp`}
+                      src={getAssetPath(`/images/villa/${villaId}/main.webp`)}
                       alt={vt(`items.${villaId}.title`)}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"

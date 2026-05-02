@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Lightbox from '@/components/shared/Lightbox';
+import {getAssetPath} from '@/lib/utils';
 
 interface VillaGalleryProps {
   id: string;
@@ -15,7 +16,7 @@ export default function VillaGallery({ id, gallery, title, lightboxTitle }: Vill
   const [isOpen, setIsOpen] = useState(false);
   const [initialIndex, setInitialIndex] = useState(0);
 
-  const images = gallery.map((img) => `/images/villa/${id}/${img}`);
+  const images = gallery.map((img) => getAssetPath(`/images/villa/${id}/${img}`));
 
   const openLightbox = (index: number) => {
     setInitialIndex(index);
@@ -33,7 +34,7 @@ export default function VillaGallery({ id, gallery, title, lightboxTitle }: Vill
             onClick={() => openLightbox(index)}
           >
             <Image
-              src={`/images/villa/${id}/${img}`}
+              src={getAssetPath(`/images/villa/${id}/${img}`)}
               alt={`${lightboxTitle} Gallery ${index + 1}`}
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"

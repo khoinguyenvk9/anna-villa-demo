@@ -11,6 +11,7 @@ const nextConfig = {
   output: 'export',
   basePath,
   assetPrefix: basePath || undefined,
+  trailingSlash: true, // Crucial for GitHub Pages to support clean URLs
 };
 
 let config = withNextIntl(nextConfig);

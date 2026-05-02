@@ -4,6 +4,7 @@ import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import {Button} from '@/components/ui/button';
 import {Link} from '@/i18n/routing';
+import {getAssetPath} from '@/lib/utils';
 
 export default async function HomePageContent({locale}: {locale: string}) {
   setRequestLocale(locale);
@@ -19,7 +20,7 @@ export default async function HomePageContent({locale}: {locale: string}) {
         <header className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/banner/487105868_1181169880371349_2751562795418342011_n.jpg"
+              src={getAssetPath("/images/banner/487105868_1181169880371349_2751562795418342011_n.jpg")}
               alt="Villa Exterior"
               fill
               className="object-cover"
@@ -87,7 +88,7 @@ export default async function HomePageContent({locale}: {locale: string}) {
             <div className="md:col-span-7 relative order-1 md:order-2">
               <div className="aspect-[4/5] relative z-10">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfUPRJnHJh49PzkYtygu_FXfLwwHkz3Ke4-hKIdb9c9cqSPF9-RhdmLe8zSohhGInx4HH3Us1CvpH3CbKhH1ce0-lqzvw0najy52YTeoGJqqNgOcaIWwjt920o7wdn9_uAMf9PYy3bRcWFGacYQ4zi8e0jR_ZL2QbFA0TmZS6vKc3OWzc0NPwTwWBfMf1Suco2jC09ZgYDsG_RcYPzRykcEEFv8cMthz2n3VMt3H695s5p0yvkelW538nwmyU9TwQGBK_7qRkjrRSf"
+                  src={getAssetPath("/images/villa/019/_THP1093-HDR.webp")}
                   alt="Interior View"
                   fill
                   className="object-cover shadow-2xl rounded-xl"
@@ -113,7 +114,7 @@ export default async function HomePageContent({locale}: {locale: string}) {
                 <div key={villa.id} className="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
                   <div className="aspect-[4/3] relative overflow-hidden">
                     <Image
-                      src={villa.src}
+                      src={getAssetPath(villa.src)}
                       alt={t(`villas.items.${villa.id}.title`)}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -144,14 +145,14 @@ export default async function HomePageContent({locale}: {locale: string}) {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { id: 'pool', src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAMdQu9-H9hEaNBINrOFWSPfj128DxgVCOxxKbjV91Z2giUdpym4MrDu_DbWZZmJDUqcKLQil3h_DmY7hNkblvLtG8HAGO15shuZBMDeG-H-7eaCVyL2zZAMgKxDCKzvUBPZAiM3Jaj90dTTTSkdPaQo5_ePbRUX_f34IeHocC_WO8VwJJkab7VLLGv5GuPdxZmdqrLT4G74PocuLlzrfIvL6_V5VB2tPPrivTyCOVuG_52lwGY5V8ymJ0T1hGoNCSN2UpXZdNRqHHV' },
-                { id: 'golf', src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB45Ef7CLOvmIDAKDsh9qasnyWjlgc1eDxt1c81mAyVLdFDZn53sEVOPlx1YTBDPNKhMtqu_XIlWdMWaK8YiSrk2qjxngwzXxe0zQpWt6J9udwbFx02PpP8PXE4JAVdnfqJv6fJYsCnnflYM2jdO_WJGjIPnNEX9du0-cnvUfHkYoB8ZIJxq8yI6piLX7IdcvRuNt0Gz_9aob_PalFPwEFhXo55PtsftSpVXwitLDnRJHsSTXfBa3pv1ulMxAKsXzQr54Gsi6MAMUnK' },
-                { id: 'chef', src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDy329UNneuYoE_Xxwl-E9IeErrcMvMsgX5bi88pO5IZ05-kxAbH0zB3Wa2Py9UfyETaVf5k4OW7rxnjL2q7QhyKdLHf0h53JVMl0w8eBBTyWeoipmEOrVvKiYxIG8J9SVDX5-wBUwDzhfIRcdVSkawlCfPGi-lt4siFMFkxtbZQRvFFpyoW2ambg71Y2618XQC6Wn8__S9BFs-ER9RfPsk0eCQIXmat_gZIKywgPn4PzKlgeKj1vPvvAm_AqcPvJMQ87mru53UkF-a' }
+                { id: 'pool', src: '/images/villa/019/main.webp' },
+                { id: 'golf', src: '/images/villa/057/_THP0722-HDR.webp' },
+                { id: 'chef', src: '/images/villa/057/_THP0636.webp' }
               ].map((exp) => (
                 <div key={exp.id} className="group bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:shadow-xl rounded-lg">
                   <div className="aspect-[16/10] relative overflow-hidden mb-6 rounded-lg">
                     <Image
-                      src={exp.src}
+                      src={getAssetPath(exp.src)}
                       alt={t(`experiences.${exp.id}.title`)}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -188,7 +189,7 @@ export default async function HomePageContent({locale}: {locale: string}) {
         <section className="grid md:grid-cols-2 h-auto md:h-[600px]">
           <div className="relative bg-surface-dim flex items-center justify-center min-h-[400px]">
             <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfekjw-qJ2_iSRNgdqP32ls0x5YkhLFNlXPLtzb77DhVX6fkVng5izgYUSl0_oqAXSeb7KBr6YEeRZW3_Ul_qoIiCyFsI9mxznP8qd57ttbFNW5RrO1aU5UjZYb5B1C7gs5qnzQjrkUMU7rMwMMMgnAbGMrbLtemxL9Vs9lNkGjlCQVFniNcXDYJX3ij0mdh5hYHWIV7hrdr3hA7pUoEB-NK05pd_bptQsojnEyAVbQs4dTSc3Yoxg_CHsGr7ln4o_4dh_5TCMeoN6"
+              src={getAssetPath("/images/villa/019/_THP0932-HDR.webp")}
               alt="Prime Location Map"
               fill
               className="object-cover grayscale opacity-50"

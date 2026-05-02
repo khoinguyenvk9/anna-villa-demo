@@ -3,6 +3,7 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import Navbar from '@/components/shared/Navbar';
 import Footer from '@/components/shared/Footer';
 import {Button} from '@/components/ui/button';
+import {getAssetPath} from '@/lib/utils';
 
 export default function LocationPage({params}: {params: Promise<{locale: string}>}) {
   return (
@@ -24,7 +25,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
         {/* Hero Section */}
         <section className="relative h-[716px] flex items-center justify-center overflow-hidden">
           <Image
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW3QeK05haiqwPClxEUuYfxiBxOqRBMsZMeLR15TO7BjZGIm3K05DdXbISxJFt4ynwz_bkSAwPnTuFcF_KHPNCgKhqHtgmSAMK6oQKG12Kaa04HiBcxAetPzO_6rZYolPg-2T0QMSN5BgX-2NYcNGI8z_LBrKFhWFPHZmYY6at7XhbCIk_mzosbq345Ciobz-S4ymgEvF4WbnKRKUa-UIQtL8fecJcQ1bNSRus-9VJOmZuNwozAkinocZ9KuaN542v5uSEcrDm0pnV"
+            src={getAssetPath("/images/villa/019/main.webp")}
             alt="Aerial Resort View"
             fill
             className="object-cover"
@@ -43,7 +44,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
             {/* Interactive Map Mockup */}
             <div className="lg:col-span-8 h-[600px] bg-surface-container-low relative overflow-hidden border border-outline-variant group rounded-xl">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv-I5F2ySmpWUzD6vI8bFgQr_Gk3BlpVALZVGfXbibRpReDLMAo5knScc3MIFpo9pBVgHemGOzLITZRsqRk09rEWUmgsnc-QngViiwpUNOg68-HBvoPNxDxSyqRi5jEEBxV7T0TqyAuYV0o_rCTKPOySnior6cftfDc4llrDnrs3hVxLPOP6SPXKbk0vn1IAm3U24UgJFN4nNXNQGFWr2MZNF_5JwnVON6Pv_6wVP9tspvCqBZeqOOLI0CMFT7MjTwHUGNb5R8SRjc"
+                src={getAssetPath("/images/villa/019/_THP1143.webp")}
                 alt="Map View"
                 fill
                 className="object-cover filter grayscale transition-transform duration-700 group-hover:scale-105"
@@ -83,9 +84,11 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
                   </div>
                 </div>
               </div>
-              <Button variant="outline" className="h-auto w-full py-8 border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest transition-all rounded-lg">
-                {t('destination.cta')}
-              </Button>
+              <a href="https://maps.google.com/?q=NovaWorld+Phan+Thiet" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="h-auto w-full py-8 border-primary text-primary hover:bg-primary hover:text-white uppercase tracking-widest transition-all rounded-lg">
+                  {t('destination.cta')}
+                </Button>
+              </a>
             </div>
           </div>
         </section>
@@ -101,7 +104,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
               {/* Water Park */}
               <div className="md:col-span-2 md:row-span-2 relative overflow-hidden border border-white/5 group rounded-xl min-h-[300px]">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQU_iJ9YYYWc7P7-3tjuYsacgLsptzqgUwT27BFsDuY3piKy2hkfuEt0LspFjnGdc-aPt8R8UVAobwL4k-Ll8oNdPgSGH4Vsjc61R6U7xkDXl9vU2i1jnUj3mtW3Vz1n6g-AtAKVaONjgs0cXUpr-S7mfAxxnIW1SMOd_1fElyRJEvI3ninZzL83yoHQI2f1FHjxKaa7ubM6njeT9XS8E4qKjnhoB-Sj9Dt6XD8-bh_QE7MBuP21-bzopwVxhPRMQBU6mejrF3Elc"
+                  src={getAssetPath("/images/villa/057/_THP0689-HDR.webp")}
                   alt="Water Park"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -115,7 +118,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
               {/* Theme Park */}
               <div className="md:col-span-2 md:row-span-1 relative overflow-hidden border border-white/5 group rounded-xl min-h-[250px]">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbyDkwQi_iNpJbZ0L-M2STQJAuho1vyvV3M8m79Ara-Zm36HC_-2W-vgcEsWdL6szAgcBnMmETfla9Ac2DeyBJevfIJib1Oeqx3DbeRoqTMi-S0BvrBz8RAtSAy5Xs4hka39gXiKtTdRt-Icou-VO5rD7uzI_PsiCdOxv9tEjtZT-BTjCVCezk7pvZ4TBYAKk1c7_3tuvkV5WxmBhd5BG0QXHgk8KX4ofjZ465HjnUTcZG3rI_bYm1SD8rryhRGWVJLPm_7M8_eOVg"
+                  src={getAssetPath("/images/villa/057/_THP0656.webp")}
                   alt="Theme Park"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -129,7 +132,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
               {/* PGA Golf */}
               <div className="md:col-span-1 md:row-span-1 relative overflow-hidden border border-white/5 group rounded-xl min-h-[200px]">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn7Z4yzPMA1nE0ZYz5TjlV557VO52OMvCEYdRimD-iYBbSgAxkqxcEF9Q0fmDWkJzgWMMS6o8ZySS8RSG8VizYxVHHA2vIa6oChUSss5o2vDi_NEh1t3eiI4Unq3omd46_R7GzNAYhGJ4iYHLDScJ8e02SG570hZRFSn4MJwa51-DiT_eQPQtFDK5EI3JPP7bOVfU_RulNmbeDCKhiuHVGu392RNKXb4yUhaA4tEyuDGm0hjnRgum6_NtQMxZYsUSjjZgh-DdfpUAi"
+                  src={getAssetPath("/images/villa/019/_THP1062-HDR.webp")}
                   alt="Golf Course"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -142,7 +145,7 @@ async function LocationContent({params}: {params: Promise<{locale: string}>}) {
               {/* Bikini Beach */}
               <div className="md:col-span-1 md:row-span-1 relative overflow-hidden border border-white/5 group rounded-xl min-h-[200px]">
                 <Image
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBifRkkbUd3ioZRy3GDzvHvJiZz-vWW8rv9LhST0RphI8DfJpG-2-omXS8xk2oGY39g1RNWnpEX-u7MjOy1rz-LTLYFs0tr4gVVlo8Nl9tlaHS_wjX3-4HiGLrzF59tDZwJ8lZKXLYbni9hPl_TvC9Jl-7KwBjVdpxpme1WBzzTwKnJv_n3qhm4QL31lNfS1olm6TAwcpFXz5snhqWtR2SEUPuhoeQizwSqLg9gPXE9D_HPNqeKP9Kch-eB39gv2B-mmQoytNE_OsJV"
+                  src={getAssetPath("/images/villa/019/_THP0889-HDR.webp")}
                   alt="Bikini Beach"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
