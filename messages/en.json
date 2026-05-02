@@ -1,0 +1,249 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "villas": "Villas",
+    "gallery": "Gallery",
+    "amenities": "Amenities",
+    "contact": "Contact",
+    "location": "Location",
+    "bookNow": "Book Now"
+  },
+  "Footer": {
+    "tagline": "Exquisite luxury retreats for the discerning traveler. Experience serenity in the world's most beautiful destinations.",
+    "quickLinks": "Quick Links",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "destinations": "Destinations",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved."
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Your Private Coastal Sanctuary",
+      "subtitle": "Discover an unparalleled retreat where modern luxury meets the timeless beauty of the coast. Experience world-class service in the complete privacy of Anna Villa.",
+      "checkAvailability": "Check Availability",
+      "exploreEstate": "Explore the Estate",
+      "tagline": "Exclusivity & Tranquility Defined"
+    },
+    "about": {
+      "tagline": "The Estate",
+      "title": "Architectural Harmony with Nature",
+      "description1": "Nestled on a secluded cliffside, Anna Villa represents the pinnacle of Mediterranean living. The architecture utilizes local materials, blending seamless glass walls with organic stone to create a continuous flow between indoor and outdoor living spaces.",
+      "description2": "Designed for those who seek the extraordinary, every corner of the villa has been curated to offer unobstructed views of the horizon, ensuring that nature's beauty is always the center of attention.",
+      "amenity1": "12,000 Sq Ft of Living Space",
+      "amenity2": "6 Presidential Suites",
+      "amenity3": "Eco-Filtered Solar Energy"
+    }
+  },
+  "VillaDetails": {
+    "hero": {
+      "title": "Villa Sapphire - Ocean View Sanctuary",
+      "guests": "{count} Guests",
+      "bedrooms": "{count} Bedrooms",
+      "bathrooms": "{count} Bathrooms",
+      "area": "{size} m²"
+    },
+    "description": {
+      "title": "Unrivaled Coastal Elegance",
+      "paragraph1": "Nestled on the sun-drenched cliffs of the Amalfi Coast, Villa Sapphire is a masterwork of contemporary Mediterranean architecture. Designed to erase the boundaries between indoor luxury and the vast blue horizon, every room offers panoramic views of the sea.",
+      "paragraph2": "Whether you're lounging by the infinity pool, hosting a private chef's dinner in the gourmet kitchen, or retreating to the spa-like sanctuary of the master suite, Villa Sapphire provides an atmosphere of absolute tranquility and refined sophistication."
+    },
+    "gallery": {
+      "title": "Visual Journey"
+    },
+    "amenities": {
+      "title": "Amenities & Services",
+      "pool": "Private Pool",
+      "kitchen": "Gourmet Kitchen",
+      "butler": "Butler Service",
+      "wifi": "High-Speed WiFi",
+      "chef": "Private Chef",
+      "parking": "Free Parking",
+      "ac": "Climate Control",
+      "gym": "Private Gym"
+    },
+    "booking": {
+      "price": "${price}",
+      "perNight": " / night",
+      "reviews": "{count} reviews",
+      "checkInOut": "Check-in / Check-out",
+      "arrive": "Arrive",
+      "depart": "Depart",
+      "guests": "Guests",
+      "serviceFee": "Service fee",
+      "tax": "Tourism tax",
+      "total": "Total",
+      "confirm": "Confirm Booking",
+      "noPayment": "No payment charged until confirmation from host"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "tagline": "Secure Your Sanctuary",
+      "title": "Experience Excellence",
+      "subtitle": "Experience the pinnacle of coastal luxury. Our team is ready to curate your bespoke escape to the Anna Villa."
+    },
+    "concierge": {
+      "tagline": "Connect With Us",
+      "title": "Personal Concierge",
+      "address": "Estate Address",
+      "reservations": "Reservations",
+      "directLine": "Direct Line"
+    },
+    "rates": {
+      "title": "Seasonal Rates",
+      "summer": "Summer Season (Jun - Aug)",
+      "springAutumn": "Spring/Autumn (Mar - May)",
+      "winter": "Winter Escape (Dec - Feb)",
+      "disclaimer": "* Rates exclude local taxes and a 5% service fee. Minimum 3-night stay required."
+    },
+    "form": {
+      "title": "Inquiry Form",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "checkIn": "Check-In",
+      "checkOut": "Check-Out",
+      "numGuests": "Number of Guests",
+      "requests": "Special Requests",
+      "placeholderName": "Johnathan Doe",
+      "placeholderEmail": "john@example.com",
+      "placeholderRequests": "Tell us about any specific requirements or occasions...",
+      "submit": "Book Your Escape"
+    }
+  },
+  "Gallery": {
+    "hero": {
+      "tagline": "Visual Journey",
+      "title": "Atmosphere & Architecture",
+      "subtitle": "Explore the meticulously curated spaces of Anna Villa, where modern luxury meets the timeless tranquility of the coast."
+    },
+    "filters": {
+      "all": "All Collections",
+      "interior": "Interior",
+      "exterior": "Exterior",
+      "area": "Area"
+    },
+    "items": {
+      "grandLounge": "The Grand Lounge",
+      "infinityHorizon": "Infinity Horizon",
+      "azureSuite": "Azure Suite",
+      "secretGardens": "Secret Gardens",
+      "coastalSerenity": "Coastal Serenity",
+      "gourmetSpace": "Gourmet Space"
+    },
+    "cta": {
+      "title": "Ready for Your Exclusive Stay?",
+      "dates": "View Available Dates",
+      "brochure": "Download Brochure"
+    }
+  },
+  "Amenities": {
+    "hero": {
+      "tagline": "Exclusivity Defined",
+      "title": "Curated Amenities",
+      "subtitle": "Discover a sanctuary of refined elegance where every detail is meticulously crafted for your ultimate coastal retreat at Anna Villa."
+    },
+    "intro": {
+      "title": "World-Class Services at Your Fingertips",
+      "description": "Anna Villa offers more than just a place to stay. We provide a bespoke hospitality experience that blends the comforts of home with the luxuries of a five-star resort. From our pristine private sands to the master-chef equipped kitchen, every space is designed for serenity.",
+      "concierge": "24/7 Personal Concierge",
+      "housekeeping": "Daily Professional Housekeeping",
+      "testimonial": "A level of privacy and service that redefined our expectations of luxury.",
+      "author": "The Henderson Family"
+    },
+    "signature": {
+      "title": "Our Signature Offerings",
+      "pool": {
+        "title": "Private Pool",
+        "description": "A temperature-controlled infinity edge pool overlooking the ocean, featuring underwater lighting and a spacious sun deck.",
+        "feature1": "Heated year-round",
+        "feature2": "Saltwater filtration",
+        "feature3": "Poolside towel service"
+      },
+      "golf": {
+        "title": "Golf Access",
+        "description": "Exclusive membership privileges at the adjacent championship coastal links, including priority tee times.",
+        "feature1": "18-hole signature course",
+        "feature2": "Complimentary cart",
+        "feature3": "Pro-shop discounts"
+      },
+      "beach": {
+        "title": "Beach Access",
+        "description": "A private staircase leads directly to a secluded stretch of pristine white sand beach, reserved exclusively for guests.",
+        "feature1": "Private beach cabanas",
+        "feature2": "Kayak & Paddleboard kit",
+        "feature3": "Evening bonfire setup"
+      },
+      "kitchen": {
+        "title": "Gourmet Kitchen",
+        "description": "A chef-designed culinary space featuring Wolf and Sub-Zero appliances, perfect for hosting or professional catering.",
+        "feature1": "Wine Cellar",
+        "feature2": "Dual Ovens",
+        "feature3": "Espresso Station",
+        "feature4": "Butler's Pantry",
+        "cta": "Hire Private Chef"
+      },
+      "bbq": {
+        "title": "BBQ Lounge",
+        "description": "An alfresco dining pavilion equipped with a professional-grade grill, wet bar, and lounge seating for twelve guests."
+      }
+    },
+    "bespoke": {
+      "title": "Additional Bespoke Services",
+      "spa": {
+        "tagline": "Wellness",
+        "title": "In-Villa Spa Treatments",
+        "description": "Bring the luxury of the spa to your bedroom with our professional therapists and custom botanical treatments.",
+        "cta": "View Treatment Menu"
+      },
+      "transport": {
+        "title": "Luxury Transport",
+        "description": "Private airport transfers and luxury car rentals on request."
+      },
+      "nanny": {
+        "title": "Nanny Services",
+        "description": "Certified, bilingual child care professionals available daily."
+      },
+      "experiences": {
+        "title": "Curated Local Experiences",
+        "description": "Let our concierge arrange private yacht charters, vineyard tours, or guided historical walks through the coast's hidden gems.",
+        "cta": "Enquire Now"
+      }
+    }
+  },
+  "Location": {
+    "hero": {
+      "title": "A Coastal Sanctuary",
+      "subtitle": "Discover the unparalleled serenity of NovaWorld Phan Thiet, where the horizon meets the shore in a dance of light and luxury."
+    },
+    "destination": {
+      "title": "The Destination",
+      "address": "Lạc Long Quân, Tiến Thành, Thành phố Phan Thiết, Bình Thuận. Situated in the heart of the prestigious NovaWorld development.",
+      "fromAirport": "From Airport",
+      "airportDesc": "2.5 hours from Tan Son Nhat (HCMC) via the newly opened Phan Thiet-Dau Giay Expressway.",
+      "byLand": "By Land",
+      "landDesc": "Easy access via coastal highway. Valet parking and private driver services are available upon request.",
+      "cta": "Open in Google Maps"
+    },
+    "highlights": {
+      "title": "NovaWorld Phan Thiet",
+      "subtitle": "A world-class integrated resort city spanning 1,000 hectares of pristine coastline and entertainment.",
+      "waterPark": {
+        "title": "Wonderland Water Park",
+        "description": "Exhilarating aquatic adventures just minutes from your villa."
+      },
+      "themePark": {
+        "title": "Circus Land",
+        "description": "International-standard amusement park with iconic fairground rides."
+      },
+      "golf": "PGA Golf Course",
+      "beach": "Bikini Beach"
+    },
+    "concierge": {
+      "title": "Bespoke Guidance",
+      "description": "Our dedicated concierge team is at your disposal to arrange private transfers, theme park tickets, or custom local tours throughout your stay.",
+      "contact": "Contact Concierge",
+      "map": "Download Area Map"
+    }
+  }
+}

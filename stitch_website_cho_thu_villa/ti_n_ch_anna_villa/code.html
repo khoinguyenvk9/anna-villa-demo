@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#2f3133",
+                "surface-tint": "#00658d",
+                "surface-variant": "#e2e2e5",
+                "on-background": "#1a1c1e",
+                "primary-fixed": "#c6e7ff",
+                "inverse-on-surface": "#f0f0f3",
+                "on-primary-fixed-variant": "#004c6b",
+                "on-secondary": "#ffffff",
+                "secondary-fixed": "#d7e2ff",
+                "outline": "#6e7881",
+                "surface-container-high": "#e8e8ea",
+                "on-tertiary-container": "#343a3e",
+                "on-surface-variant": "#3e4850",
+                "surface-container-low": "#f3f3f6",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#171c21",
+                "surface-container-highest": "#e2e2e5",
+                "primary-fixed-dim": "#82cfff",
+                "tertiary-fixed-dim": "#c2c7cd",
+                "tertiary": "#595f64",
+                "tertiary-fixed": "#dee3e9",
+                "on-secondary-fixed": "#001b3f",
+                "on-primary-container": "#003e58",
+                "on-tertiary-fixed-variant": "#42474c",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#abc7ff",
+                "primary": "#00658d",
+                "on-surface": "#1a1c1e",
+                "error": "#ba1a1a",
+                "primary-container": "#00aeef",
+                "secondary-container": "#79a9fd",
+                "on-primary": "#ffffff",
+                "on-primary-fixed": "#001e2d",
+                "secondary": "#255dad",
+                "surface-container": "#eeeef0",
+                "inverse-primary": "#82cfff",
+                "on-secondary-container": "#003c7e",
+                "on-error": "#ffffff",
+                "surface": "#f9f9fc",
+                "outline-variant": "#bdc8d1",
+                "on-tertiary": "#ffffff",
+                "surface-bright": "#f9f9fc",
+                "on-secondary-fixed-variant": "#00458f",
+                "tertiary-container": "#9ea3a9",
+                "background": "#f9f9fc",
+                "surface-dim": "#dadadc"
+              },
+              "borderRadius": {
+                "DEFAULT": "0.5rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+              },
+              "spacing": {
+                "margin-desktop": "64px",
+                "container-max": "1280px",
+                "unit": "8px",
+                "margin-mobile": "16px",
+                "gutter": "24px"
+              },
+              "fontFamily": {
+                "headline-lg": ["Noto Serif"],
+                "body-md": ["Plus Jakarta Sans"],
+                "label-md": ["Plus Jakarta Sans"],
+                "headline-md": ["Noto Serif"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "display-xl": ["Noto Serif"]
+              },
+              "fontSize": {
+                "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Noto Serif', serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar Shell -->
+<nav class="bg-inverse-surface dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-white/10 flex justify-between items-center px-12 py-5 w-full">
+<div class="text-2xl font-serif italic text-primary-fixed tracking-tighter">Anna Villa</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-serif tracking-widest uppercase text-xs text-surface-container-lowest hover:text-primary-fixed transition-colors duration-500" href="#">Home</a>
+<a class="font-serif tracking-widest uppercase text-xs text-surface-container-lowest hover:text-primary-fixed transition-colors duration-500" href="#">Gallery</a>
+<a class="font-serif tracking-widest uppercase text-xs text-surface-container-lowest hover:text-primary-fixed transition-colors duration-500" href="#">Location</a>
+<a class="font-serif tracking-widest uppercase text-xs text-primary-fixed border-b border-primary-fixed pb-1 hover:text-primary-fixed transition-colors duration-500" href="#">Amenities</a>
+<a class="font-serif tracking-widest uppercase text-xs text-surface-container-lowest hover:text-primary-fixed transition-colors duration-500" href="#">Rates</a>
+</div>
+<button class="bg-primary-container text-on-primary font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+            Book Now
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A wide-angle, cinematic photograph of a luxury coastal villa overlooking a turquoise ocean at golden hour. The architecture is modern and minimalist with clean white lines, reflecting the warm sunlight. Soft, ethereal lighting fills the scene, emphasizing a sense of high-end tranquility and exclusive hospitality. The color palette is dominated by deep navy blues, soft whites, and glowing gold accents from the setting sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3CHIn3E6LFEoXicDEEWMoPS7-MLTMzn-gZwIN_ZeuEuuRzXz-_fEWC2aA2EPBorkdeuKrr71Oy0KHgRGrbHIQOjA_JxD53O2sVJcPoJjxhmduQWQ5bVWQWYz8Qcwpr5U6PUD4QpWYTxi6zPVzN5FnFoqkYdU1d4WgY5TE1gpv1IjxtIovxpBWaDZ2MSsTQNrCbLnt4SqCUqQ4w_jpl-7G3FAZyg5JlLH_F9e7l3asLZAnkuUYwTU6iBaZlpxj63X6Yi7CtTJCYnQ9"/>
+<div class="absolute inset-0 bg-inverse-surface/40"></div>
+</div>
+<div class="relative z-10 text-center px-gutter">
+<span class="font-semibold text-sm text-primary-fixed mb-4 block uppercase tracking-[0.3em]">Exclusivity Defined</span>
+<h1 class="text-display-xl font-bold text-white mb-6">Curated Amenities</h1>
+<p class="text-body-lg text-white/80 max-w-2xl mx-auto">Discover a sanctuary of refined elegance where every detail is meticulously crafted for your ultimate coastal retreat at Anna Villa.</p>
+</div>
+</section>
+<!-- Intro Content -->
+<section class="py-24 px-12 max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5">
+<h2 class="text-headline-lg text-primary mb-6">World-Class Services at Your Fingertips</h2>
+<p class="text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                    Anna Villa offers more than just a place to stay. We provide a bespoke hospitality experience that blends the comforts of home with the luxuries of a five-star resort. From our pristine private sands to the master-chef equipped kitchen, every space is designed for serenity.
+                </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-2xl">concierge</span>
+<span class="font-bold text-xs uppercase tracking-widest">24/7 Personal Concierge</span>
+</div>
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-2xl">cleaning_services</span>
+<span class="font-bold text-xs uppercase tracking-widest">Daily Professional Housekeeping</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-7 relative h-[500px]">
+<img class="w-full h-full object-cover shadow-2xl rounded-lg" data-alt="Close-up detail of a luxury outdoor lounge area featuring high-end wicker furniture and plush cream cushions. A tray with fresh tropical fruit and crystal glassware sits on a low wooden table. The background shows a blurred view of a infinity pool merging with the ocean horizon under a clear, bright sky. The aesthetic is clean, coastal, and sophisticated with a focus on high-fidelity textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARfl7ktlXP47Jcb9_zFtvj_L51PWYXOoDmGpiXh3njettTiYLswQyhLK08rNUaffd2AGZJXp6QyKtpRhQSIY7GepIo90bv5g76v6Ei-6zvZ58-qhBKzWnsmM1LB_lMe5Xg0PplL5z-msBZTU8fESd50m3IO_CVhmg_e51vpNjTjW47PofQ2zxuNo0fyOpqOpzzYAgDqFbUu5KzE6iKPSwLhseK2zkzkxRABrupRUCapMp6CwCy-F16kmTlEAvIcxGDSKZns02C6sDl"/>
+<div class="absolute -bottom-8 -left-8 bg-primary-container p-10 text-white hidden lg:block max-w-xs border border-white/10 rounded-lg">
+<p class="font-serif italic text-xl mb-4 text-on-primary">"A level of privacy and service that redefined our expectations of luxury."</p>
+<cite class="font-bold text-xs uppercase text-primary-fixed">— The Henderson Family</cite>
+</div>
+</div>
+</section>
+<!-- Main Amenities Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="px-12 max-w-container-max mx-auto">
+<div class="text-center mb-24">
+<h2 class="text-headline-lg text-primary mb-4">Our Signature Offerings</h2>
+<div class="h-1 w-24 bg-primary-container mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Private Pool -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col group rounded-lg overflow-hidden">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An expansive private infinity pool at a luxury villa, reflecting the deep blue of the sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoc9BAeWfxlRzCcuNe1J44p06NnkbSWQQmg5V_4GbXOV8f3UnZNB9ZTWmFUihoz35hkzMSuKvoA-c1gwLH4opfqHmO_CeWg4KEk0NYN_9gXC19w74rrbrpSgK5r8bsFK-KoyF5N5AmU-QQDGqoZP6SWbyuH09hMFPm-QWDXdCkS05_6vSgSphFoHb3gTtL4IE_7XNw15frS5WjFojzGZLPkhBCmQKrpzJgo3niyn1q8WPUvQeC8HAloJqg1c-n_7RdVy_DGTHftVx6"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md text-primary">Private Pool</h3>
+<span class="material-symbols-outlined text-primary">pool</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-6">A temperature-controlled infinity edge pool overlooking the ocean, featuring underwater lighting and a spacious sun deck.</p>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Heated year-round</li>
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Saltwater filtration</li>
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Poolside towel service</li>
+</ul>
+</div>
+</div>
+<!-- Golf Course Access -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col group rounded-lg overflow-hidden">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A meticulously manicured green on a championship golf course by the sea." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADE0TnVE-nCz1PFHTtTm_rz6DKzUO-PRIM9no_FyRQeD0q9AjHK_53Gwu9DJiouwf4b3OAK7fxiYiWEdMk_PNqZhiQqH5L1Yf72BiyL_RzTTYmfRH6TrWmbQc3jIUlAbMoZyNo3JvbSTIiqe8-n9Y4PvcsTUUhPB8dUB4HrGBS1j9uRwesKisaOkN4PSEIWD8T5XGmv6agrkalW0-XZqquLs8OpmxBPs_FST4kvP3Z22WS96FLbA7McDXS6f-c56v9W7q1s1m_jJNb"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md text-primary">Golf Access</h3>
+<span class="material-symbols-outlined text-primary">golf_course</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-6">Exclusive membership privileges at the adjacent championship coastal links, including priority tee times.</p>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> 18-hole signature course</li>
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Complimentary cart</li>
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Pro-shop discounts</li>
+</ul>
+</div>
+</div>
+<!-- Beach Access -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col group rounded-lg overflow-hidden">
+<div class="aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A pristine, secluded white sand beach with gentle turquoise waves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKU34uzapy4U4DWN0Ijwsat0xbesTuu03y_HJW_EDQMQDgp76HHXmeHpN3b_KRfpjqig5qDbb5ztCRl42d6xtHPQxqMljEZJr6TC67c3Yxn581ESjb-PB6JGhMmD7npLZpdouMu3gib6TaBR4BfaktUVcY4h6MuAghmwbC3Ja1VMM1Wt9_Cd_9dj-PTSv736Tm3TtgcdCvMgSenIPodoIacdE6-ScchqFqRNh8dfz2REZTQ42Qi1Czvd_0q6NFueEfWF-WLr3nInAr"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md text-primary">Beach Access</h3>
+<span class="material-symbols-outlined text-primary">beach_access</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-6">A private staircase leads directly to a secluded stretch of pristine white sand beach, reserved exclusively for guests.</p>
+<ul class="space-y-2 mb-8">
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Private beach cabanas</li>
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Kayak &amp; Paddleboard kit</li>
+<li class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Evening bonfire setup</li>
+</ul>
+</div>
+</div>
+<!-- Fully Equipped Kitchen -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col group lg:col-span-2 md:flex-row rounded-lg overflow-hidden">
+<div class="w-full md:w-1/2 aspect-square md:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A modern, high-end professional kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEYi9wR218RVesWw1vC-rMKyslCqO4hwVXa0H8kFY9lLZuc2hnoDlWXfYJQCVsqIVOPKXZKkxE0yZzqChDP-6QLjriMKHq2jpFMhb0PhUmREzB3vCRitjOi5TOUQauTB3hbDlprYHW-pWRhfChxNcNJidD9edcM5YIw1BL7WA7RgHZKxdSBpBrK7HE50B39KTezEugm-KjPqp-mDNgysWDiGTXsRaDL5DAcHnx8G-kjlqH9cGgwW-Exelo3fFYWCwqeyyYzUOUalDD"/>
+</div>
+<div class="p-12 md:w-1/2 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-6">
+<h3 class="text-headline-md text-primary">Gourmet Kitchen</h3>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<p class="text-body-lg text-on-surface-variant mb-8">A chef-designed culinary space featuring Wolf and Sub-Zero appliances, perfect for hosting or professional catering.</p>
+<div class="grid grid-cols-2 gap-4 mb-10">
+<div class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Wine Cellar</div>
+<div class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Dual Ovens</div>
+<div class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Espresso Station</div>
+<div class="flex items-center gap-2 text-sm text-primary"><span class="material-symbols-outlined text-sm">check</span> Butler's Pantry</div>
+</div>
+<button class="border border-primary text-primary font-bold text-xs py-4 px-8 self-start hover:bg-primary hover:text-white transition-colors uppercase rounded-lg">Hire Private Chef</button>
+</div>
+</div>
+<!-- BBQ Area -->
+<div class="bg-surface-container-lowest border border-outline-variant/30 flex flex-col group rounded-lg overflow-hidden">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A luxurious outdoor kitchen and dining area under a stylish wooden pergola." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBugskM1B1OQGuYScPvkjZwoD2IdVeSUq0Rk4Kl5K6IA17w98FIhlYX_wOPqBK_xiVcOVup_3ECk4uOOf6XQ_DtdMgegEJz3nHCwG6jxp_F1aCGPvqtNFmXCCUHuZcUfRyKNMPCQjYc_IAppwlrSFlGCeyD92Hi3QL_Fo9UUrlpG5GiU0nCE62H_HRfECcyuLstCZ2ZyjbO-qFH7ECxdNuWaNxqMIbW1gOGVYuvsSSRvLoDGltNTdiCb6wldEkM-ciJ_a5XCQMH3oC3"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-headline-md text-primary">BBQ Lounge</h3>
+<span class="material-symbols-outlined text-primary">outdoor_grill</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-6">An alfresco dining pavilion equipped with a professional-grade grill, wet bar, and lounge seating for twelve guests.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Services Bento -->
+<section class="py-24 px-12 max-w-container-max mx-auto">
+<h2 class="text-headline-lg text-primary text-center mb-16">Additional Bespoke Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-auto md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-primary-container p-12 text-on-primary flex flex-col justify-end relative overflow-hidden group rounded-lg">
+<div class="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A serene indoor spa room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkhLvaYKQ4CWa-UBLGSd09tgoGabDANabClg87r7iS3n99OHVKd3dJJJJlcJC3LsWlw2HZMU7SOrpI7ccMQHZ6Ig2uVyW0_kMYxKcNpQT15XpZExSRAQ63IZky3MuomtfSwzPzsBhIHC_JsCsPHRAfdfeIY4e6usWAizqyrep5V-MlnPBiMew6l_HLKxBoaMpZjJGz6j6FfEWXH-GU3MFLV9qq7QzaPzJhbPmi28lYu5WJSb8iKRNoHu-VbkeZOugzhff3V3avHD_K"/>
+</div>
+<div class="relative z-10">
+<span class="font-bold text-xs text-primary-fixed mb-4 block uppercase tracking-widest">Wellness</span>
+<h3 class="text-headline-md mb-4">In-Villa Spa Treatments</h3>
+<p class="text-body-md opacity-90 mb-8 max-w-sm">Bring the luxury of the spa to your bedroom with our professional therapists and custom botanical treatments.</p>
+<a class="text-primary-fixed font-bold text-xs uppercase border-b border-primary-fixed pb-1" href="#">View Treatment Menu</a>
+</div>
+</div>
+<div class="bg-surface-container p-8 flex flex-col justify-center items-center text-center rounded-lg">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">directions_car</span>
+<h3 class="font-bold text-xs text-primary mb-2 uppercase tracking-widest">Luxury Transport</h3>
+<p class="text-xs text-on-surface-variant">Private airport transfers and luxury car rentals on request.</p>
+</div>
+<div class="bg-surface-container p-8 flex flex-col justify-center items-center text-center rounded-lg">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">child_care</span>
+<h3 class="font-bold text-xs text-primary mb-2 uppercase tracking-widest">Nanny Services</h3>
+<p class="text-xs text-on-surface-variant">Certified, bilingual child care professionals available daily.</p>
+</div>
+<div class="md:col-span-2 bg-primary-fixed p-12 flex flex-col justify-between rounded-lg">
+<div>
+<h3 class="text-headline-md text-on-primary-fixed mb-4">Curated Local Experiences</h3>
+<p class="text-on-primary-fixed-variant max-w-md">Let our concierge arrange private yacht charters, vineyard tours, or guided historical walks through the coast's hidden gems.</p>
+</div>
+<button class="bg-primary text-white font-bold text-xs py-4 px-10 self-start uppercase rounded-lg">Enquire Now</button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container py-24 px-12 text-center text-white">
+<h2 class="text-headline-lg mb-8">Ready for Your Unforgettable Stay?</h2>
+<p class="text-body-lg text-white/90 max-w-2xl mx-auto mb-12">Experience the pinnacle of coastal luxury at Anna Villa. Our team is ready to curate every detail of your visit.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-surface-container-lowest text-primary font-bold text-xs py-5 px-12 uppercase rounded-lg hover:bg-primary-fixed transition-colors">Reserve Your Dates</button>
+<button class="border border-white/40 text-white font-bold text-xs py-5 px-12 uppercase rounded-lg hover:bg-white/10 transition-colors">Download Villa Guide</button>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-inverse-surface dark:bg-slate-950 full-width border-t border-white/10 flex flex-col md:flex-row justify-between items-center px-12 py-20 w-full">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-serif text-primary-fixed mb-4">Anna Villa</div>
+<p class="text-primary-fixed/60 font-serif text-sm max-w-xs leading-loose">Experience the art of living well on the golden coast.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12 md:gap-24 mb-12 md:mb-0">
+<div class="flex flex-col gap-4">
+<span class="font-bold text-xs text-white uppercase tracking-widest mb-2">Explore</span>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Gallery</a>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Amenities</a>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Rates</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-xs text-white uppercase tracking-widest mb-2">Legal</span>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Guest Ledger</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-xs text-white uppercase tracking-widest mb-2">Connect</span>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Contact</a>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">Instagram</a>
+<a class="font-serif text-sm text-surface-variant hover:text-white transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+<div class="text-surface-variant font-serif text-sm md:text-right">
+            © 2024 Anna Villa. <br class="hidden md:block"/>Exclusivity &amp; Tranquility Defined.
+        </div>
+</footer>
+</body></html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#2f3133",
+                "surface-tint": "#00658d",
+                "surface-variant": "#e2e2e5",
+                "on-background": "#1a1c1e",
+                "primary-fixed": "#c6e7ff",
+                "inverse-on-surface": "#f0f0f3",
+                "on-primary-fixed-variant": "#004c6b",
+                "on-secondary": "#ffffff",
+                "secondary-fixed": "#d7e2ff",
+                "outline": "#6e7881",
+                "surface-container-high": "#e8e8ea",
+                "on-tertiary-container": "#343a3e",
+                "on-surface-variant": "#3e4850",
+                "surface-container-low": "#f3f3f6",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#171c21",
+                "surface-container-highest": "#e2e2e5",
+                "primary-fixed-dim": "#82cfff",
+                "tertiary-fixed-dim": "#c2c7cd",
+                "tertiary": "#595f64",
+                "tertiary-fixed": "#dee3e9",
+                "on-secondary-fixed": "#001b3f",
+                "on-primary-container": "#003e58",
+                "on-tertiary-fixed-variant": "#42474c",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#abc7ff",
+                "primary": "#00658d",
+                "on-surface": "#1a1c1e",
+                "error": "#ba1a1a",
+                "primary-container": "#00aeef",
+                "secondary-container": "#79a9fd",
+                "on-primary": "#ffffff",
+                "on-primary-fixed": "#001e2d",
+                "secondary": "#255dad",
+                "surface-container": "#eeeef0",
+                "inverse-primary": "#82cfff",
+                "on-secondary-container": "#003c7e",
+                "on-error": "#ffffff",
+                "surface": "#f9f9fc",
+                "outline-variant": "#bdc8d1",
+                "on-tertiary": "#ffffff",
+                "surface-bright": "#f9f9fc",
+                "on-secondary-fixed-variant": "#00458f",
+                "tertiary-container": "#9ea3a9",
+                "background": "#f9f9fc",
+                "surface-dim": "#dadadc"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "64px",
+                "container-max": "1280px",
+                "unit": "8px",
+                "margin-mobile": "16px",
+                "gutter": "24px"
+        },
+        "fontFamily": {
+                "headline-lg": ["Noto Serif"],
+                "body-md": ["Plus Jakarta Sans"],
+                "label-md": ["Plus Jakarta Sans"],
+                "headline-md": ["Noto Serif"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "display-xl": ["Noto Serif"]
+        },
+        "fontSize": {
+                "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-primary-container dark:bg-slate-950 flex justify-between items-center px-12 py-5 w-full docked full-width top-0 sticky z-50 border-b border-white/10 flat no-shadows">
+<div class="text-2xl font-display-xl italic text-on-primary tracking-tighter">Anna Villa</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-label-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-on-primary transition-colors duration-500" href="#">Home</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-on-primary border-b border-on-primary pb-1 transition-colors duration-500" href="#">Gallery</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-on-primary transition-colors duration-500" href="#">Location</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-on-primary transition-colors duration-500" href="#">Amenities</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-on-primary transition-colors duration-500" href="#">Rates</a>
+</div>
+<button class="bg-on-primary text-primary px-6 py-2 font-label-md text-label-md uppercase tracking-widest hover:bg-opacity-90 transition-all rounded-full">Book Now</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A panoramic wide shot of a stunning luxury villa at dusk, with the warm golden sun setting over a calm turquoise ocean. The architecture features clean white lines and floor-to-ceiling glass walls, softly reflecting the navy and gold sky. The atmosphere is quiet and exclusive, with elegant ambient lighting emphasizing the pool's smooth surface and the lush, manicured tropical greenery. The composition follows high-end architectural photography standards with a balanced, serene mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf1zgNv_gRxeS1fnfgtsBunUEyg7Tqx2gJ_SsWedowb7-px5Ycs5AdjH65D5HEl5530gFANmxVpvNCmsJbh_MrsoD5nP41OkeEbqRG0W7NwH1X9skFwDGK30Dv6QvO2NWISCxrNfLg26blDcXIZ0yOt8lR4jiM-d-15D89NkxqxWPmZl0lgWxbMWUXpEusCcf3abzY08g_ytGZZz5938MW4nvxQxyHHQ_fn1CO6KXZGilWG7pIzmrchIa0NHmv0BGcSZ-eAukip2mA"/>
+<div class="relative z-20 text-center px-gutter max-w-4xl">
+<span class="font-label-md text-label-md text-primary-fixed-dim uppercase tracking-[0.3em] mb-4 block">Visual Journey</span>
+<h1 class="font-display-xl text-display-xl text-white mb-6">Atmosphere &amp; Architecture</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto">Explore the meticulously curated spaces of Anna Villa, where modern luxury meets the timeless tranquility of the coast.</p>
+</div>
+</section>
+<!-- Category Navigation -->
+<section class="py-12 bg-surface-container-lowest sticky top-[72px] z-40 border-b border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-gutter flex justify-center space-x-12">
+<button class="font-label-md text-label-md text-primary border-b-2 border-primary pb-2 px-4 transition-all">All Collections</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary pb-2 px-4 transition-all">Interior</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary pb-2 px-4 transition-all">Exterior</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary pb-2 px-4 transition-all">Area</button>
+</div>
+</section>
+<!-- Masonry Gallery -->
+<section class="py-24 px-gutter max-w-container-max mx-auto">
+<div class="masonry-grid">
+<!-- Item 1: Interior Living -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 cursor-pointer rounded-xl">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A spacious modern living room with tall ceilings and massive glass doors opening to a coastal view. The interior design features luxury navy blue velvet sofas and gold-trimmed coffee tables on a neutral cream rug. Soft morning sunlight filters through sheer curtains, creating a tranquil and airy feeling. The color palette is sophisticated navy, gold, and ivory, reflecting a minimalist yet opulent aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo8poetfZUkCkPUTvl2Pn6xXO4nP5uqdWVrTGH-lYvRwu9Y73AQRQTkNFeHnvyCOhlvu49rTDeslpHKeCiuUZ28vO47Ae1WhDztu8Zt6fV2hBO8F-aPrxtGii3aKYCFoKq9RQz5CcaLZBH-5dK37E1PoGuFpb7fiHu_BL3675uxuE5DJk_7sSHsxL4McP9qpGByg2YJnAWhVtRqwIFnZKIHz3mSVWTt8cL-f7QvDP3nTwaivXNxZIN7Vepw-NnpmM7OFQ0rIMsxBKw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label-md text-[10px] text-primary-fixed uppercase tracking-widest mb-2">Interior</span>
+<h3 class="font-headline-md text-white text-2xl">The Grand Lounge</h3>
+</div>
+</div>
+<!-- Item 2: Exterior Pool -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 cursor-pointer rounded-xl">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An infinity pool at a high-end luxury villa during the golden hour. The pool water is crystal clear and reflects the deep orange and navy blue of the sunset sky. Sleek modern sun loungers with navy cushions are positioned neatly on the stone deck. The background shows a panoramic ocean view, emphasizing a feeling of total seclusion and exclusive resort-style living." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX_H5KH7IPk9fx_zpJnFFaO53rFr_CERp1EL8-FnMoMPJihe8Brwvd44Jwuqn-ygge08DPfoSauGeMU_KcO1LNXHKG_lwdXaasaZDLT6qG2S5z5VH4WpH-rF5UirOGIgaWYRwsRh4qKwu5omApSvBYQ7dSaxuDt_aikhNvJn4fuKqyEFBCbqmdXvql7FnQwh2VScD42Kod4Se9stZtPen9FzMSFYe7xKylhdckwKgXjLty03M2nbRI4qW0Ow2JahFhg2onNa-_Shre"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label-md text-[10px] text-primary-fixed uppercase tracking-widest mb-2">Exterior</span>
+<h3 class="font-headline-md text-white text-2xl">Infinity Horizon</h3>
+</div>
+</div>
+<!-- Item 3: Interior Bedroom -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 cursor-pointer rounded-xl">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A master suite bedroom with a minimalist and sophisticated design. The king-size bed has crisp white linens and a navy blue throw pillow. Behind the bed is a dark wood paneled wall with gold recessed lighting. A large window offers a view of the manicured villa gardens. The lighting is moody and warm, highlighting the high-quality textures of the wood and fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe9rAlZV6uUaRaN8yk833cBZMoG9OaD5E8JF_44GMUHtdQfeQIJpcUVUFToSOaxI6YkZXPUIhr9zJgZisuS5GhXRFkPRIR452KUhXeAvXJ0HDXrlIhr9SZECCNn6ki-HHp0P_Iaj8Km76k_yNeu0kzb0JM9EaP2_L8iy7gxsvu7PwazRA2cO2-cX0DPbR_gV1E89O3nsrJzWLzznzyHVZKwg_UbTloTm3HcYXuwbglL-RjUwbt2VnhRx4qveso6lKFMycXBKheLS3n"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label-md text-[10px] text-primary-fixed uppercase tracking-widest mb-2">Interior</span>
+<h3 class="font-headline-md text-white text-2xl">Azure Suite</h3>
+</div>
+</div>
+<!-- Item 4: Garden / Exterior -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 cursor-pointer rounded-xl">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A lush tropical garden surrounding a luxury villa walkway at night. The landscaping is expertly lit with warm golden ground lights that create shadows among the palm trees and exotic ferns. The path is made of sleek dark stone tiles leading towards the main house, which is glowing with warm interior light. The scene is intimate, quiet, and deeply sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgEQtytvtpYlnmilNHIqHfCE7jhV-zWmgiSgF80ncBl_O6740MBhN6GVy9BiukWSKQduIddIzp8pvLag4XMxqywK1o9ZVevAmvImlS-UqgfoQUXhHTb0WEhLazJRqS7bTMtw2Y5mX1P0zO_r4kMp2HvkI9qcp1Ptt4aCjMPqTWL8TXwIb9ZTccTcx2jwUY93Iz5f1ChwXZFzeS6hKk2ZIv3i6ZclCCewkTnLLSGdHGlRJfINn6dKzVt-cPt8Ct-3M_wFOJWnZgufZ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label-md text-[10px] text-primary-fixed uppercase tracking-widest mb-2">Exterior</span>
+<h3 class="font-headline-md text-white text-2xl">Secret Gardens</h3>
+</div>
+</div>
+<!-- Item 5: Area / View -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 cursor-pointer rounded-xl">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide drone shot of a pristine white sand beach near the villa property. The water is clear turquoise near the shore, fading into a deep navy blue further out. There are no crowds, only a couple of distant private umbrellas. The lighting is bright and high-key, conveying a sense of exclusive coastal serenity and natural beauty characteristic of a high-end luxury destination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ4lJNhUdPnEOXDFB5-_XD5MBvfPnLo66Yj8ljCFkVYkhhonSV5V-oZI4yuz71ilGqMN3L76s82sEq7ARyGc4gikha-wonC0XKTrPqXJ5mCdUEPoUFaMB1A9qKD4lLoguYZ9jEszzsYgXt05AqEjILF3qsehYFkQeWSFt-X_XjszyflHS50xiKCIoQig7FEW4kxlhA7ziqvmxwJE3AY3xTF2qu3uszYzzbkBNBgvw9lNKC-cyxRmeUoJWkUAdpnqUW6Ycj7S3KSCO9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label-md text-[10px] text-primary-fixed uppercase tracking-widest mb-2">Area</span>
+<h3 class="font-headline-md text-white text-2xl">Coastal Serenity</h3>
+</div>
+</div>
+<!-- Item 6: Kitchen / Dining -->
+<div class="masonry-item group relative overflow-hidden bg-surface-container border border-outline-variant/20 cursor-pointer rounded-xl">
+<img class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A high-end designer kitchen with navy blue cabinetry and white marble countertops. Gold faucets and cabinet hardware glint under soft pendant lighting. A bottle of vintage wine and two glasses sit on the central island, suggesting a professional hospitality environment. The kitchen is impeccably clean and minimalist, blending professional functionality with luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYdnk7voI5TixyLR9PiG0RkrKtfQC6zH6-ZO_lvmAcDvn5XPu4VCf73QSqpZm31lkrFXn1nj38Z-2dUu9nYyvM_Y39Dw3-OspN6HfiLAIDES3g0QqMWHZXGM4gtYr6L4kvgvmmNza7ou9rNfncfe64I4bddQxfxgKsHvysQ_LsIglj0mA4shl42z4r2JUJYrBzqCWDI0_cwMznvO_clP3QjuITjybOFlPqk4IcYyv7idwk9JwVSH0dvGvVYYAgjYtpyjO5nuVBipXV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<span class="font-label-md text-[10px] text-primary-fixed uppercase tracking-widest mb-2">Interior</span>
+<h3 class="font-headline-md text-white text-2xl">Gourmet Space</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container py-24 text-on-primary">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-display-xl text-display-xl mb-8">Ready for Your Exclusive Stay?</h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<button class="bg-on-primary text-primary px-12 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-opacity-90 transition-all w-full md:w-auto rounded-full">View Available Dates</button>
+<button class="border border-white/30 text-white px-12 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all w-full md:w-auto rounded-full">Download Brochure</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center px-12 py-20 w-full full-width border-t border-white/10 flat">
+<div class="flex flex-col mb-10 md:mb-0">
+<div class="text-xl font-display-xl text-on-primary mb-4">Anna Villa</div>
+<p class="font-body-md text-sm tracking-normal text-on-primary/70">© 2024 Anna Villa. Exclusivity &amp; Tranquility Defined.</p>
+</div>
+<div class="flex space-x-8">
+<a class="font-body-md text-sm tracking-normal text-on-primary/70 hover:text-on-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-sm tracking-normal text-on-primary/70 hover:text-on-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-sm tracking-normal text-on-primary/70 hover:text-on-primary transition-colors" href="#">Contact</a>
+<a class="font-body-md text-sm tracking-normal text-on-primary hover:text-white transition-colors" href="#">Guest Ledger</a>
+</div>
+</footer>
+</body></html>

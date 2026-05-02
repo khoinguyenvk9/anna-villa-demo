@@ -1,0 +1,249 @@
+{
+  "Navigation": {
+    "home": "Trang chủ",
+    "villas": "Biệt thự",
+    "gallery": "Bộ sưu tập",
+    "amenities": "Tiện ích",
+    "contact": "Liên hệ",
+    "location": "Vị trí",
+    "bookNow": "Đặt ngay"
+  },
+  "Footer": {
+    "tagline": "Khu nghỉ dưỡng sang trọng dành cho những du khách sành điệu. Trải nghiệm sự yên bình tại những điểm đến đẹp nhất thế giới.",
+    "quickLinks": "Liên kết nhanh",
+    "privacyPolicy": "Chính sách bảo mật",
+    "termsOfService": "Điều khoản dịch vụ",
+    "destinations": "Điểm đến",
+    "followUs": "Theo dõi chúng tôi",
+    "allRightsReserved": "Đã đăng ký bản quyền."
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Thánh địa ven biển riêng tư của bạn",
+      "subtitle": "Khám phá một khu nghỉ dưỡng vô song nơi sự sang trọng hiện đại kết hợp với vẻ đẹp vượt thời gian của bờ biển. Trải nghiệm dịch vụ đẳng cấp thế giới trong sự riêng tư hoàn toàn của Anna Villa.",
+      "checkAvailability": "Kiểm tra phòng trống",
+      "exploreEstate": "Khám phá khuôn viên",
+      "tagline": "Định nghĩa sự Độc bản & Yên bình"
+    },
+    "about": {
+      "tagline": "Khuôn viên",
+      "title": "Sự hài hòa kiến trúc với thiên nhiên",
+      "description1": "Nằm trên một vách đá hẻo lánh, Anna Villa đại diện cho đỉnh cao của cuộc sống Địa Trung Hải. Kiến trúc sử dụng vật liệu địa phương, kết hợp các bức tường kính liền mạch với đá hữu cơ để tạo ra một dòng chảy liên tục giữa không gian sống trong nhà và ngoài trời.",
+      "description2": "Được thiết kế cho những ai tìm kiếm sự phi thường, mọi ngóc ngách của biệt thự đã được giám tuyển để mang lại tầm nhìn không bị cản trở ra đường chân trời, đảm bảo rằng vẻ đẹp của thiên nhiên luôn là tâm điểm chú ý.",
+      "amenity1": "1.100 m² không gian sống",
+      "amenity2": "6 dãy phòng tổng thống",
+      "amenity3": "Năng lượng mặt trời lọc sinh thái"
+    }
+  },
+  "VillaDetails": {
+    "hero": {
+      "title": "Villa Sapphire - Thánh địa View Biển",
+      "guests": "{count} Khách",
+      "bedrooms": "{count} Phòng ngủ",
+      "bathrooms": "{count} Phòng tắm",
+      "area": "{size} m²"
+    },
+    "description": {
+      "title": "Vẻ Đẹp Bờ Biển Vô Song",
+      "paragraph1": "Nằm trên những vách đá ngập tràn ánh nắng của Bờ biển Amalfi, Villa Sapphire là một kiệt tác của kiến trúc Địa Trung Hải đương đại. Được thiết kế để xóa nhòa ranh giới giữa sự sang trọng trong nhà và đường chân trời xanh bao la, mọi căn phòng đều có tầm nhìn toàn cảnh ra biển.",
+      "paragraph2": "Cho dù bạn đang thư giãn bên hồ bơi vô cực, thưởng thức bữa tối do đầu bếp riêng phục vụ trong nhà bếp cao cấp, hay ẩn mình trong không gian yên tĩnh của phòng ngủ chính, Villa Sapphire đều mang đến một bầu không khí yên bình tuyệt đối và sự tinh tế thuần khiết."
+    },
+    "gallery": {
+      "title": "Hành Trình Thị Giác"
+    },
+    "amenities": {
+      "title": "Tiện ích & Dịch vụ",
+      "pool": "Hồ bơi riêng",
+      "kitchen": "Nhà bếp cao cấp",
+      "butler": "Dịch vụ quản gia",
+      "wifi": "WiFi tốc độ cao",
+      "chef": "Đầu bếp riêng",
+      "parking": "Chỗ đậu xe miễn phí",
+      "ac": "Kiểm soát khí hậu",
+      "gym": "Phòng Gym riêng"
+    },
+    "booking": {
+      "price": "${price}",
+      "perNight": " / đêm",
+      "reviews": "{count} đánh giá",
+      "checkInOut": "Nhận phòng / Trả phòng",
+      "arrive": "Đến",
+      "depart": "Đi",
+      "guests": "Khách",
+      "serviceFee": "Phí dịch vụ",
+      "tax": "Thuế du lịch",
+      "total": "Tổng cộng",
+      "confirm": "Xác nhận đặt phòng",
+      "noPayment": "Không tính phí cho đến khi chủ nhà xác nhận"
+    }
+  },
+  "Contact": {
+    "hero": {
+      "tagline": "Đảm bảo không gian riêng tư của bạn",
+      "title": "Trải nghiệm sự xuất sắc",
+      "subtitle": "Trải nghiệm đỉnh cao của sự sang trọng ven biển. Đội ngũ của chúng tôi sẵn sàng chuẩn bị cho kỳ nghỉ riêng biệt của bạn tại Anna Villa."
+    },
+    "concierge": {
+      "tagline": "Kết nối với chúng tôi",
+      "title": "Quản gia cá nhân",
+      "address": "Địa chỉ khuôn viên",
+      "reservations": "Đặt phòng",
+      "directLine": "Đường dây trực tiếp"
+    },
+    "rates": {
+      "title": "Giá theo mùa",
+      "summer": "Mùa hè (Tháng 6 - Tháng 8)",
+      "springAutumn": "Mùa xuân/Thu (Tháng 3 - Tháng 5)",
+      "winter": "Mùa đông (Tháng 12 - Tháng 2)",
+      "disclaimer": "* Giá chưa bao gồm thuế địa phương và 5% phí dịch vụ. Yêu cầu lưu trú tối thiểu 3 đêm."
+    },
+    "form": {
+      "title": "Mẫu yêu cầu",
+      "fullName": "Họ và tên",
+      "email": "Địa chỉ Email",
+      "checkIn": "Ngày đến",
+      "checkOut": "Ngày đi",
+      "numGuests": "Số lượng khách",
+      "requests": "Yêu cầu đặc biệt",
+      "placeholderName": "Nguyễn Văn A",
+      "placeholderEmail": "a@example.com",
+      "placeholderRequests": "Hãy cho chúng tôi biết về bất kỳ yêu cầu hoặc dịp đặc biệt nào...",
+      "submit": "Đặt kỳ nghỉ của bạn"
+    }
+  },
+  "Gallery": {
+    "hero": {
+      "tagline": "Hành Trình Thị Giác",
+      "title": "Không Gian & Kiến Trúc",
+      "subtitle": "Khám phá những không gian được giám tuyển tỉ mỉ của Anna Villa, nơi sự sang trọng hiện đại gặp gỡ sự yên bình vượt thời gian của bờ biển."
+    },
+    "filters": {
+      "all": "Tất cả bộ sưu tập",
+      "interior": "Nội thất",
+      "exterior": "Ngoại thất",
+      "area": "Khu vực"
+    },
+    "items": {
+      "grandLounge": "Sảnh chờ lớn",
+      "infinityHorizon": "Chân trời vô cực",
+      "azureSuite": "Phòng Azure",
+      "secretGardens": "Vườn bí mật",
+      "coastalSerenity": "Sự yên bình ven biển",
+      "gourmetSpace": "Không gian ẩm thực"
+    },
+    "cta": {
+      "title": "Sẵn sàng cho kỳ nghỉ độc bản của bạn?",
+      "dates": "Xem ngày trống",
+      "brochure": "Tải tài liệu giới thiệu"
+    }
+  },
+  "Amenities": {
+    "hero": {
+      "tagline": "Định nghĩa sự Độc bản",
+      "title": "Tiện ích Giám tuyển",
+      "subtitle": "Khám phá một thánh địa của sự sang trọng tinh tế, nơi mọi chi tiết đều được chế tác tỉ mỉ cho kỳ nghỉ ven biển trọn vẹn của bạn tại Anna Villa."
+    },
+    "intro": {
+      "title": "Dịch vụ Đẳng cấp Thế giới trong tầm tay",
+      "description": "Anna Villa mang đến nhiều hơn là một nơi để ở. Chúng tôi cung cấp một trải nghiệm khách hàng riêng biệt kết hợp sự thoải mái như ở nhà với sự sang trọng của một khu nghỉ dưỡng năm sao. Từ bãi cát riêng hoang sơ đến nhà bếp được trang bị cho đầu bếp bậc thầy, mọi không gian đều được thiết kế cho sự yên bình.",
+      "concierge": "Quản gia cá nhân 24/7",
+      "housekeeping": "Dọn phòng chuyên nghiệp hàng ngày",
+      "testimonial": "Một cấp độ riêng tư và dịch vụ đã định nghĩa lại kỳ vọng của chúng tôi về sự sang trọng.",
+      "author": "Gia đình Henderson"
+    },
+    "signature": {
+      "title": "Các Dịch vụ Đặc trưng",
+      "pool": {
+        "title": "Hồ bơi riêng",
+        "description": "Hồ bơi vô cực kiểm soát nhiệt độ nhìn ra đại dương, có hệ thống đèn dưới nước và sân phơi nắng rộng rãi.",
+        "feature1": "Sưởi ấm quanh năm",
+        "feature2": "Lọc nước mặn",
+        "feature3": "Dịch vụ khăn trải hồ bơi"
+      },
+      "golf": {
+        "title": "Sân Golf",
+        "description": "Đặc quyền hội viên độc quyền tại các sân golf ven biển vô địch liền kề, bao gồm ưu tiên thời gian phát bóng.",
+        "feature1": "Sân golf 18 lỗ đặc trưng",
+        "feature2": "Xe điện miễn phí",
+        "feature3": "Giảm giá tại cửa hàng dụng cụ"
+      },
+      "beach": {
+        "title": "Lối ra bãi biển",
+        "description": "Một cầu thang riêng dẫn trực tiếp đến bãi cát trắng hẻo lánh, dành riêng cho khách nghỉ dưỡng.",
+        "feature1": "Nhà lều bãi biển riêng",
+        "feature2": "Bộ dụng cụ Chèo thuyền & Chèo ván",
+        "feature3": "Thiết lập lửa trại buổi tối"
+      },
+      "kitchen": {
+        "title": "Nhà bếp cao cấp",
+        "description": "Không gian ẩm thực do đầu bếp thiết kế với các thiết bị Wolf và Sub-Zero, hoàn hảo cho việc tổ chức tiệc hoặc phục vụ chuyên nghiệp.",
+        "feature1": "Hầm rượu",
+        "feature2": "Lò nướng đôi",
+        "feature3": "Trạm pha cà phê Espresso",
+        "feature4": "Phòng chuẩn bị của quản gia",
+        "cta": "Thuê đầu bếp riêng"
+      },
+      "bbq": {
+        "title": "Khu vực BBQ",
+        "description": "Không gian ăn uống ngoài trời được trang bị bếp nướng chuyên nghiệp, quầy bar và chỗ ngồi cho mười hai khách."
+      }
+    },
+    "bespoke": {
+      "title": "Các Dịch vụ Riêng biệt Bổ sung",
+      "spa": {
+        "tagline": "Sức khỏe",
+        "title": "Trị liệu Spa tại biệt thự",
+        "description": "Mang sự sang trọng của spa vào phòng ngủ của bạn với các chuyên gia trị liệu chuyên nghiệp và các liệu pháp thực vật tùy chỉnh.",
+        "cta": "Xem thực đơn trị liệu"
+      },
+      "transport": {
+        "title": "Vận chuyển sang trọng",
+        "description": "Đưa đón sân bay riêng và thuê xe hạng sang theo yêu cầu."
+      },
+      "nanny": {
+        "title": "Dịch vụ bảo mẫu",
+        "description": "Các chuyên gia chăm sóc trẻ em được cấp chứng chỉ, song ngữ sẵn sàng phục vụ hàng ngày."
+      },
+      "experiences": {
+        "title": "Trải nghiệm địa phương giám tuyển",
+        "description": "Hãy để quản gia của chúng tôi sắp xếp các chuyến thuê du thuyền riêng, tour tham quan vườn nho hoặc đi bộ tham quan lịch sử qua các viên ngọc ẩn giấu của bờ biển.",
+        "cta": "Yêu cầu ngay"
+      }
+    }
+  },
+  "Location": {
+    "hero": {
+      "title": "Một Thánh địa Ven biển",
+      "subtitle": "Khám phá sự yên bình vô song của NovaWorld Phan Thiết, nơi đường chân trời gặp gỡ bờ biển trong một điệu nhảy của ánh sáng và sự sang trọng."
+    },
+    "destination": {
+      "title": "Điểm đến",
+      "address": "Lạc Long Quân, Tiến Thành, Thành phố Phan Thiết, Bình Thuận. Nằm trong lòng dự án NovaWorld đẳng cấp.",
+      "fromAirport": "Từ sân bay",
+      "airportDesc": "2,5 giờ từ Tân Sơn Nhất (TP.HCM) qua đường cao tốc Phan Thiết - Dầu Giây mới khánh thành.",
+      "byLand": "Bằng đường bộ",
+      "landDesc": "Dễ dàng tiếp cận qua quốc lộ ven biển. Dịch vụ đỗ xe hộ và tài xế riêng luôn sẵn sàng theo yêu cầu.",
+      "cta": "Mở trong Google Maps"
+    },
+    "highlights": {
+      "title": "NovaWorld Phan Thiết",
+      "subtitle": "Một thành phố nghỉ dưỡng tích hợp đẳng cấp thế giới trải dài trên 1.000 ha đường bờ biển hoang sơ và giải trí.",
+      "waterPark": {
+        "title": "Công viên nước Wonderland",
+        "description": "Những cuộc phiêu lưu dưới nước đầy phấn khích chỉ cách biệt thự của bạn vài phút."
+      },
+      "themePark": {
+        "title": "Circus Land",
+        "description": "Công viên giải trí tiêu chuẩn quốc tế với những trò chơi hội chợ mang tính biểu tượng."
+      },
+      "golf": "Sân Golf PGA",
+      "beach": "Bãi biển Bikini"
+    },
+    "concierge": {
+      "title": "Hướng dẫn Riêng biệt",
+      "description": "Đội ngũ quản gia tận tâm của chúng tôi luôn sẵn sàng sắp xếp xe đưa đón riêng, vé công viên giải trí hoặc các tour du lịch địa phương tùy chỉnh trong suốt kỳ nghỉ của bạn.",
+      "contact": "Liên hệ Quản gia",
+      "map": "Tải bản đồ khu vực"
+    }
+  }
+}

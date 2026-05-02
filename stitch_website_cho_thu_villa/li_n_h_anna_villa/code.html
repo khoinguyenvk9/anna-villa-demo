@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2f3133",
+                        "surface-tint": "#00658d",
+                        "surface-variant": "#e2e2e5",
+                        "on-background": "#1a1c1e",
+                        "primary-fixed": "#c6e7ff",
+                        "inverse-on-surface": "#f0f0f3",
+                        "on-primary-fixed-variant": "#004c6b",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d7e2ff",
+                        "outline": "#6e7881",
+                        "surface-container-high": "#e8e8ea",
+                        "on-tertiary-container": "#343a3e",
+                        "on-surface-variant": "#3e4850",
+                        "surface-container-low": "#f3f3f6",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#171c21",
+                        "surface-container-highest": "#e2e2e5",
+                        "primary-fixed-dim": "#82cfff",
+                        "tertiary-fixed-dim": "#c2c7cd",
+                        "tertiary": "#595f64",
+                        "tertiary-fixed": "#dee3e9",
+                        "on-secondary-fixed": "#001b3f",
+                        "on-primary-container": "#003e58",
+                        "on-tertiary-fixed-variant": "#42474c",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#abc7ff",
+                        "primary": "#00658d",
+                        "on-surface": "#1a1c1e",
+                        "error": "#ba1a1a",
+                        "primary-container": "#00aeef",
+                        "secondary-container": "#79a9fd",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#001e2d",
+                        "secondary": "#255dad",
+                        "surface-container": "#eeeef0",
+                        "inverse-primary": "#82cfff",
+                        "on-secondary-container": "#003c7e",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9fc",
+                        "outline-variant": "#bdc8d1",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "on-secondary-fixed-variant": "#00458f",
+                        "tertiary-container": "#9ea3a9",
+                        "background": "#f9f9fc",
+                        "surface-dim": "#dadadc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "section-padding": "8rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-xl": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-hero-overlay {
+            background: linear-gradient(rgba(0, 101, 141, 0.6), rgba(0, 62, 88, 0.8));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-primary-container dark:bg-slate-950 docked full-width top-0 sticky z-50 border-b border-white/10 flex justify-between items-center px-12 py-5 w-full">
+<div class="text-2xl font-headline-lg italic text-white tracking-tighter">Anna Villa</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md tracking-widest uppercase text-xs text-white/90 hover:text-primary-fixed transition-colors duration-500" href="#">Home</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-white/90 hover:text-primary-fixed transition-colors duration-500" href="#">Gallery</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-white/90 hover:text-primary-fixed transition-colors duration-500" href="#">Location</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-white/90 hover:text-primary-fixed transition-colors duration-500" href="#">Amenities</a>
+<a class="font-label-md tracking-widest uppercase text-xs text-white/90 hover:text-primary-fixed transition-colors duration-500" href="#">Rates</a>
+</div>
+<button class="bg-surface-container-lowest text-primary px-6 py-2 font-label-md text-label-md uppercase rounded-lg hover:bg-primary-fixed transition-colors">Book Now</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A wide cinematic shot of a luxury mediterranean villa perched on a coastal cliff at golden hour. The architecture features clean white lines and infinity pools reflecting a warm orange and navy sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxnhIDkuEaVU_-nKnt5OdLHGqOFHz11qZ7_7AU9J5QoLQ9n1Pffw84DjJFT9I77cRO5zZ1w3lOxLxxzKo85E49sIC75vc7IUyNfmBn9m6vZL2Xnau8Ch6TIbv7ozii62Z5miZ1xCJ5E6mHk-u58L_-s8GbxG2Ytx9-aXplITkRBUC7Dc_MURNokeP94SPUxYQ0KtE6NRo_xakML9cI6xF2V6Zfs57MByDH54-JncbPHcSrEj1CCGb8CDlFQwxkljZBJCEpDFCVQWu2"/>
+<div class="absolute inset-0 bg-hero-overlay"></div>
+</div>
+<div class="relative z-10 text-center px-4">
+<h1 class="font-display-xl text-display-xl text-white mb-4">Secure Your Sanctuary</h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto">Experience the pinnacle of coastal luxury. Our team is ready to curate your bespoke escape to the Anna Villa.</p>
+</div>
+</section>
+<!-- Booking & Contact Grid -->
+<section class="max-w-container-max mx-auto px-12 py-section-padding">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Contact Details & Rates -->
+<div class="lg:col-span-5 space-y-12">
+<div>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest block mb-4">Connect With Us</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Personal Concierge</h2>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label-md text-label-md text-primary uppercase mb-1">Estate Address</p>
+<p class="text-on-surface-variant">742 Ocean Drive, Sapphire Bay, SC 90210</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<div>
+<p class="font-label-md text-label-md text-primary uppercase mb-1">Reservations</p>
+<p class="text-on-surface-variant">stay@annavilla.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<div>
+<p class="font-label-md text-label-md text-primary uppercase mb-1">Direct Line</p>
+<p class="text-on-surface-variant">+1 (555) 890-2400</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 border border-outline-variant rounded-xl">
+<h3 class="font-headline-md text-headline-md text-primary mb-6">Seasonal Rates</h3>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-outline-variant pb-3">
+<span class="text-on-surface">Summer Season (Jun - Aug)</span>
+<span class="font-bold text-primary">$2,450 / night</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-3">
+<span class="text-on-surface">Spring/Autumn (Mar - May)</span>
+<span class="font-bold text-primary">$1,850 / night</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-3">
+<span class="text-on-surface">Winter Escape (Dec - Feb)</span>
+<span class="font-bold text-primary">$1,200 / night</span>
+</div>
+<p class="text-xs italic text-on-surface-variant pt-4">* Rates exclude local taxes and a 5% service fee. Minimum 3-night stay required.</p>
+</div>
+</div>
+</div>
+<!-- Inquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-12 shadow-xl border border-outline-variant rounded-xl">
+<h3 class="font-headline-md text-headline-md text-primary mb-8">Inquiry Form</h3>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary uppercase">Full Name</label>
+<input class="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all rounded-lg" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary uppercase">Email Address</label>
+<input class="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all rounded-lg" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary uppercase">Check-In</label>
+<input class="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all rounded-lg" type="date"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary uppercase">Check-Out</label>
+<input class="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all rounded-lg" type="date"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary uppercase">Number of Guests</label>
+<select class="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all appearance-none rounded-lg">
+<option>1-2 Guests</option>
+<option>3-4 Guests</option>
+<option>5-8 Guests (Full Villa)</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-primary uppercase">Special Requests</label>
+<textarea class="bg-surface border-b border-outline py-3 px-4 focus:ring-0 focus:border-primary outline-none text-body-md transition-all resize-none rounded-lg" placeholder="Tell us about any specific requirements or occasions..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-label-md text-label-md py-5 uppercase tracking-widest rounded-lg hover:bg-surface-tint transition-all active:opacity-70" type="submit">
+                            Book Your Escape
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[500px] relative">
+<div class="absolute inset-0 bg-surface-container-highest flex items-center justify-center">
+<img class="w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="An artistic, desaturated map display of a coastal region" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIOb_xJGDLiXmzoPGoyTbL-pvRJ-QhAOhf_28fqp7axlk2JhpDhNjI00_7RFtdrtlzpz_DFfx3M7bm_n4vrz2OZkV_3nDx_aKw9fXoBUx-la2aeDTDuOcm9l45nm6VroF9NYCIw9WMBeMSMo1WFBMJhg4nxA5IQGtJcJgd1nzfiVx9XZhOTieVoIjvVlHbH4l08ZMcrc2QleGBD1c_qWmD0yBmike9ibwBKAGSu1viEht_FrD3-3uxUPXddZNB7QFAIbDZVeA87el-"/>
+<div class="absolute z-10 bg-primary-container text-white p-6 border border-white/20 max-w-sm rounded-xl">
+<h4 class="font-headline-md text-headline-md text-white mb-2">Our Location</h4>
+<p class="text-sm text-white/80 leading-relaxed">Nestled in the exclusive enclave of Sapphire Bay, Anna Villa offers unparalleled privacy while remaining just 20 minutes from the vibrant city center.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-inverse-surface full-width border-t border-white/10 flex flex-col md:flex-row justify-between items-center px-12 py-20 w-full">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-headline-lg italic text-primary-fixed mb-4">Anna Villa</div>
+<p class="font-body-md text-sm tracking-normal text-surface-variant">© 2024 Anna Villa. Exclusivity &amp; Tranquility Defined.</p>
+</div>
+<div class="flex gap-8 flex-wrap justify-center">
+<a class="font-label-md text-sm text-surface-variant hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-sm text-surface-variant hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-sm text-surface-variant hover:text-white transition-colors" href="#">Contact</a>
+<a class="font-label-md text-sm text-primary-fixed transition-colors" href="#">Guest Ledger</a>
+</div>
+</footer>
+</body></html>

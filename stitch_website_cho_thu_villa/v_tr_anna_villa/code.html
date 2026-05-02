@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#2f3133",
+                "surface-tint": "#00658d",
+                "surface-variant": "#e2e2e5",
+                "on-background": "#1a1c1e",
+                "primary-fixed": "#c6e7ff",
+                "inverse-on-surface": "#f0f0f3",
+                "on-primary-fixed-variant": "#004c6b",
+                "on-secondary": "#ffffff",
+                "secondary-fixed": "#d7e2ff",
+                "outline": "#6e7881",
+                "surface-container-high": "#e8e8ea",
+                "on-tertiary-container": "#343a3e",
+                "on-surface-variant": "#3e4850",
+                "surface-container-low": "#f3f3f6",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#171c21",
+                "surface-container-highest": "#e2e2e5",
+                "primary-fixed-dim": "#82cfff",
+                "tertiary-fixed-dim": "#c2c7cd",
+                "tertiary": "#595f64",
+                "tertiary-fixed": "#dee3e9",
+                "on-secondary-fixed": "#001b3f",
+                "on-primary-container": "#003e58",
+                "on-tertiary-fixed-variant": "#42474c",
+                "error-container": "#ffdad6",
+                "secondary-fixed-dim": "#abc7ff",
+                "primary": "#00658d",
+                "on-surface": "#1a1c1e",
+                "error": "#ba1a1a",
+                "primary-container": "#00aeef",
+                "secondary-container": "#79a9fd",
+                "on-primary": "#ffffff",
+                "on-primary-fixed": "#001e2d",
+                "secondary": "#255dad",
+                "surface-container": "#eeeef0",
+                "inverse-primary": "#82cfff",
+                "on-secondary-container": "#003c7e",
+                "on-error": "#ffffff",
+                "surface": "#f9f9fc",
+                "outline-variant": "#bdc8d1",
+                "on-tertiary": "#ffffff",
+                "surface-bright": "#f9f9fc",
+                "on-secondary-fixed-variant": "#00458f",
+                "tertiary-container": "#9ea3a9",
+                "background": "#f9f9fc",
+                "surface-dim": "#dadadc"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "margin-desktop": "64px",
+                "container-max": "1280px",
+                "unit": "8px",
+                "margin-mobile": "16px",
+                "gutter": "24px"
+        },
+        "fontFamily": {
+                "headline-lg": ["Noto Serif"],
+                "body-md": ["Plus Jakarta Sans"],
+                "label-md": ["Plus Jakarta Sans"],
+                "headline-md": ["Noto Serif"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "display-xl": ["Noto Serif"]
+        },
+        "fontSize": {
+                "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .map-grayscale {
+      filter: grayscale(1) contrast(1.1) brightness(0.9);
+    }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="bg-primary dark:bg-slate-950 flex justify-between items-center px-12 py-5 w-full docked full-width top-0 sticky z-50 border-b border-white/10 no-shadows">
+<div class="text-2xl font-display-xl italic text-on-primary tracking-tighter">Anna Villa</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-headline-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-white transition-colors duration-500" href="#">Home</a>
+<a class="font-headline-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-white transition-colors duration-500" href="#">Gallery</a>
+<a class="font-headline-md tracking-widest uppercase text-xs text-white border-b border-white pb-1" href="#">Location</a>
+<a class="font-headline-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-white transition-colors duration-500" href="#">Amenities</a>
+<a class="font-headline-md tracking-widest uppercase text-xs text-on-primary/80 hover:text-white transition-colors duration-500" href="#">Rates</a>
+</div>
+<button class="bg-secondary text-white px-6 py-2.5 font-label-md text-label-md uppercase tracking-widest transition-transform hover:scale-105 active:opacity-70 rounded-lg">Book Now</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[716px] flex items-center justify-center overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A sweeping aerial view of a luxurious coastal resort development in Phan Thiet, Vietnam. The scene captures the sparkling turquoise waters of the East Sea meeting a pristine white sand beach, with elegant white villas nestled among lush tropical greenery. The lighting is the golden hour of sunset, casting long, soft shadows and highlighting the warm, exclusive atmosphere of the Anna Villa. The aesthetic is high-end, clean, and tranquil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW3QeK05haiqwPClxEUuYfxiBxOqRBMsZMeLR15TO7BjZGIm3K05DdXbISxJFt4ynwz_bkSAwPnTuFcF_KHPNCgKhqHtgmSAMK6oQKG12Kaa04HiBcxAetPzO_6rZYolPg-2T0QMSN5BgX-2NYcNGI8z_LBrKFhWFPHZmYY6at7XhbCIk_mzosbq345Ciobz-S4ymgEvF4WbnKRKUa-UIQtL8fecJcQ1bNSRus-9VJOmZuNwozAkinocZ9KuaN542v5uSEcrDm0pnV"/>
+<div class="absolute inset-0 bg-primary/40"></div>
+<div class="relative z-10 text-center text-white px-gutter max-w-4xl">
+<h1 class="font-display-xl text-display-xl mb-6">A Coastal Sanctuary</h1>
+<p class="font-body-lg text-body-lg opacity-90 max-w-2xl mx-auto">Discover the unparalleled serenity of NovaWorld Phan Thiet, where the horizon meets the shore in a dance of light and luxury.</p>
+</div>
+</section>
+<!-- Map & Directions Section -->
+<section class="py-24 px-12 max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Interactive Map Mockup -->
+<div class="lg:col-span-8 h-[600px] bg-surface-container-low relative overflow-hidden border border-outline-variant group rounded-xl">
+<img class="w-full h-full object-cover map-grayscale transition-transform duration-700 group-hover:scale-105" data-alt="A stylized, high-contrast map of the Phan Thiet coastline in Vietnam, rendered in a sophisticated muted color palette of slate grays and silvers. The map features elegant typography and minimalist iconography, with a single prominent gold pin marking the exact location of the Anna Villa. The surrounding terrain of NovaWorld is subtly detailed, emphasizing the proximity to the ocean and main transit routes." data-location="Phan Thiet, Vietnam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv-I5F2ySmpWUzD6vI8bFgQr_Gk3BlpVALZVGfXbibRpReDLMAo5knScc3MIFpo9pBVgHemGOzLITZRsqRk09rEWUmgsnc-QngViiwpUNOg68-HBvoPNxDxSyqRi5jEEBxV7T0TqyAuYV0o_rCTKPOySnior6cftfDc4llrDnrs3hVxLPOP6SPXKbk0vn1IAm3U24UgJFN4nNXNQGFWr2MZNF_5JwnVON6Pv_6wVP9tspvCqBZeqOOLI0CMFT7MjTwHUGNb5R8SRjc"/>
+<!-- Custom Marker -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-white p-3 rounded-full shadow-lg border-2 border-white mb-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">villa</span>
+</div>
+<div class="bg-primary text-white px-4 py-1.5 font-label-md text-[10px] tracking-widest uppercase rounded-full">Anna Villa</div>
+</div>
+<!-- Map Controls -->
+<div class="absolute bottom-6 right-6 flex flex-col gap-2">
+<button class="bg-white p-3 shadow-md hover:bg-surface-container transition-colors rounded-lg"><span class="material-symbols-outlined text-primary">add</span></button>
+<button class="bg-white p-3 shadow-md hover:bg-surface-container transition-colors rounded-lg"><span class="material-symbols-outlined text-primary">remove</span></button>
+</div>
+</div>
+<!-- Directions & Location Info -->
+<div class="lg:col-span-4 flex flex-col justify-center space-y-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">The Destination</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Lạc Long Quân, Tiến Thành, Thành phố Phan Thiết, Bình Thuận. Situated in the heart of the prestigious NovaWorld development.</p>
+</div>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container text-white flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined">flight</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary uppercase mb-1">From Airport</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">2.5 hours from Tan Son Nhat (HCMC) via the newly opened Phan Thiet-Dau Giay Expressway.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container text-white flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined">directions_car</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary uppercase mb-1">By Land</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Easy access via coastal highway. Valet parking and private driver services are available upon request.</p>
+</div>
+</div>
+</div>
+<button class="w-full py-4 border border-primary text-primary font-label-md text-label-md uppercase tracking-widest hover:bg-primary hover:text-white transition-all duration-300 rounded-lg">Open in Google Maps</button>
+</div>
+</div>
+</section>
+<!-- Area Highlights (Bento Grid) -->
+<section class="bg-primary-container py-24">
+<div class="px-12 max-w-[1400px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-white mb-4">NovaWorld Phan Thiet</h2>
+<p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto">A world-class integrated resort city spanning 1,000 hectares of pristine coastline and entertainment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-[800px]">
+<!-- Water Park -->
+<div class="md:col-span-2 md:row-span-2 relative overflow-hidden border border-white/5 group rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant and luxurious water park scene at NovaWorld Phan Thiet, featuring crystal clear blue swimming pools, architectural water slides, and elegant poolside cabanas. The lighting is bright and sunny, reflecting off the water surfaces." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQU_iJ9YYYWc7P7-3tjuYsacgLsptzqgUwT27BFsDuY3piKy2hkfuEt0LspFjnGdc-aPt8R8UVAobwL4k-Ll8oNdPgSGH4Vsjc61R6U7xkDXl9vU2i1jnUj3mtW3Vz1n6g-AtAKVaONjgs0cXUpr-S7mfAxxnIW1SMOd_1fElyRJEvI3ninZzL83yoHQI2f1FHjxKaa7ubM6njeT9XS8E4qKjnhoB-Sj9Dt6XD8-bh_QE7MBuP21-bzopwVxhPRMQBU6mejrF3Elc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-white mb-2">Wonderland Water Park</h3>
+<p class="font-body-md text-white/80 max-w-sm">Exhilarating aquatic adventures just minutes from your villa.</p>
+</div>
+</div>
+<!-- Theme Park -->
+<div class="md:col-span-2 md:row-span-1 relative overflow-hidden border border-white/5 group rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An evening view of a sophisticated theme park at NovaWorld, with a beautifully illuminated carousel and modern amusement rides against a deep twilight sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbyDkwQi_iNpJbZ0L-M2STQJAuho1vyvV3M8m79Ara-Zm36HC_-2W-vgcEsWdL6szAgcBnMmETfla9Ac2DeyBJevfIJib1Oeqx3DbeRoqTMi-S0BvrBz8RAtSAy5Xs4hka39gXiKtTdRt-Icou-VO5rD7uzI_PsiCdOxv9tEjtZT-BTjCVCezk7pvZ4TBYAKk1c7_3tuvkV5WxmBhd5BG0QXHgk8KX4ofjZ465HjnUTcZG3rI_bYm1SD8rryhRGWVJLPm_7M8_eOVg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline-md text-white text-2xl mb-1">Circus Land</h3>
+<p class="font-body-md text-white/80 text-sm">International-standard amusement park with iconic fairground rides.</p>
+</div>
+</div>
+<!-- PGA Golf -->
+<div class="md:col-span-1 md:row-span-1 relative overflow-hidden border border-white/5 group rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A lush, manicured green of a PGA standard golf course overlooking the ocean at Phan Thiet." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn7Z4yzPMA1nE0ZYz5TjlV557VO52OMvCEYdRimD-iYBbSgAxkqxcEF9Q0fmDWkJzgWMMS6o8ZySS8RSG8VizYxVHHA2vIa6oChUSss5o2vDi_NEh1t3eiI4Unq3omd46_R7GzNAYhGJ4iYHLDScJ8e02SG570hZRFSn4MJwa51-DiT_eQPQtFDK5EI3JPP7bOVfU_RulNmbeDCKhiuHVGu392RNKXb4yUhaA4tEyuDGm0hjnRgum6_NtQMxZYsUSjjZgh-DdfpUAi"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<h3 class="font-label-md text-white tracking-[0.2em] uppercase bg-primary/80 px-4 py-2 rounded">PGA Golf Course</h3>
+</div>
+</div>
+<!-- Bikini Beach -->
+<div class="md:col-span-1 md:row-span-1 relative overflow-hidden border border-white/5 group rounded-xl">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="The pristine shoreline of Bikini Beach in Phan Thiet, featuring white designer lounge chairs and luxury umbrellas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBifRkkbUd3ioZRy3GDzvHvJiZz-vWW8rv9LhST0RphI8DfJpG-2-omXS8xk2oGY39g1RNWnpEX-u7MjOy1rz-LTLYFs0tr4gVVlo8Nl9tlaHS_wjX3-4HiGLrzF59tDZwJ8lZKXLYbni9hPl_TvC9Jl-7KwBjVdpxpme1WBzzTwKnJv_n3qhm4QL31lNfS1olm6TAwcpFXz5snhqWtR2SEUPuhoeQizwSqLg9gPXE9D_HPNqeKP9Kch-eB39gv2B-mmQoytNE_OsJV"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<h3 class="font-label-md text-white tracking-[0.2em] uppercase bg-primary/80 px-4 py-2 rounded">Bikini Beach</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Concierge Assistance -->
+<section class="py-24 px-12">
+<div class="max-w-4xl mx-auto bg-surface-container-low border border-outline-variant p-12 text-center shadow-sm rounded-xl">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6">explore</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Bespoke Guidance</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl mx-auto">Our dedicated concierge team is at your disposal to arrange private transfers, theme park tickets, or custom local tours throughout your stay.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-primary text-white px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:opacity-90 transition-opacity rounded-lg">Contact Concierge</button>
+<button class="border border-primary text-primary px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-surface-container transition-colors rounded-lg">Download Area Map</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center px-12 py-20 w-full full-width border-t border-white/10">
+<div class="mb-10 md:mb-0">
+<div class="text-xl font-display-xl text-white mb-2">Anna Villa</div>
+<p class="font-body-md text-sm tracking-normal text-white/60">© 2024 Anna Villa. Exclusivity &amp; Tranquility Defined.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+<a class="font-label-md text-sm tracking-normal text-white/60 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-sm tracking-normal text-white/60 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-sm tracking-normal text-white/60 hover:text-white transition-colors" href="#">Contact</a>
+<a class="font-label-md text-sm tracking-normal text-white/60 hover:text-white transition-colors" href="#">Guest Ledger</a>
+</div>
+</footer>
+</body></html>

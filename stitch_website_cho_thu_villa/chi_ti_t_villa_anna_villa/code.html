@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2f3133",
+                        "surface-tint": "#00658d",
+                        "surface-variant": "#e2e2e5",
+                        "on-background": "#1a1c1e",
+                        "primary-fixed": "#c6e7ff",
+                        "inverse-on-surface": "#f0f0f3",
+                        "on-primary-fixed-variant": "#004c6b",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#d7e2ff",
+                        "outline": "#6e7881",
+                        "surface-container-high": "#e8e8ea",
+                        "on-tertiary-container": "#343a3e",
+                        "on-surface-variant": "#3e4850",
+                        "surface-container-low": "#f3f3f6",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#171c21",
+                        "surface-container-highest": "#e2e2e5",
+                        "primary-fixed-dim": "#82cfff",
+                        "tertiary-fixed-dim": "#c2c7cd",
+                        "tertiary": "#595f64",
+                        "tertiary-fixed": "#dee3e9",
+                        "on-secondary-fixed": "#001b3f",
+                        "on-primary-container": "#003e58",
+                        "on-tertiary-fixed-variant": "#42474c",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#abc7ff",
+                        "primary": "#00658d",
+                        "on-surface": "#1a1c1e",
+                        "error": "#ba1a1a",
+                        "primary-container": "#00aeef",
+                        "secondary-container": "#79a9fd",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed": "#001e2d",
+                        "secondary": "#255dad",
+                        "surface-container": "#eeeef0",
+                        "inverse-primary": "#82cfff",
+                        "on-secondary-container": "#003c7e",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9fc",
+                        "outline-variant": "#bdc8d1",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9fc",
+                        "on-secondary-fixed-variant": "#00458f",
+                        "tertiary-container": "#9ea3a9",
+                        "background": "#f9f9fc",
+                        "surface-dim": "#dadadc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Noto Serif"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Noto Serif"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-xl": ["Noto Serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f9f9fc;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 flex justify-between items-center px-12 py-5 w-full bg-white/60 backdrop-blur-2xl border-b border-sky-100/20 shadow-[0_20px_50px_rgba(0,74,153,0.05)]">
+<div class="text-2xl font-bold tracking-widest text-sky-600 font-headline-lg">Anna Villa</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-600 hover:text-sky-500 transition-colors font-label-md" href="#">Home</a>
+<a class="text-sky-600 border-b-2 border-sky-500 pb-1 font-semibold font-label-md" href="#">Villas</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors font-label-md" href="#">Gallery</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors font-label-md" href="#">Amenities</a>
+<a class="text-slate-600 hover:text-sky-500 transition-colors font-label-md" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-lg font-label-md hover:shadow-lg transition-all active:scale-95">Book Now</button>
+</nav>
+<main class="max-w-[1440px] mx-auto px-6 md:px-12 py-8">
+<!-- Hero Section -->
+<section class="relative h-[716px] mb-12 rounded-3xl overflow-hidden">
+<img alt="Villa Sapphire Exterior" class="w-full h-full object-cover" data-alt="A wide-angle, high-resolution photograph of a modern luxury villa perched on a cliff overlooking the turquoise Mediterranean Sea at dusk. The architecture features clean white lines, expansive floor-to-ceiling glass walls, and a glowing infinity pool that seamlessly blends into the ocean horizon. Warm interior lights spill onto the limestone terrace, creating a serene, exclusive atmosphere with soft twilight hues and a clear sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiOFFZARNCKT2fOP9ILldnUN2mxzvDi5Ghh-k6YsV_S4h1KYnnMoVN0iNp666lEIjDskAAeh9xnGEC_JaJ7ytdWEIyHEHYgbLcAhOo1ew7rbMrCFVtDKHZlmAjSp6S1XzzAxg_15i1J6HaCrFyCA-hW-jnwyHPgaCmeC7q3QbH7hgGr4FJgedYTuUE63S8M5SRc3RTfI400ysvf8_Xz8NINbCXDBHA3ZDCalzcfSI7mZnSg_miyScRxOdVbkEl6QXYX2VH_LNMWitk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-12">
+<div class="glass-panel max-w-2xl p-8 rounded-2xl border border-white/20">
+<h1 class="font-headline-lg text-4xl md:text-5xl text-slate-800 mb-4">Villa Sapphire - Ocean View Sanctuary</h1>
+<div class="flex gap-6 text-slate-700">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+<span class="font-label-md">8 Guests</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="bed">bed</span>
+<span class="font-label-md">4 Bedrooms</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="bathtub">bathtub</span>
+<span class="font-label-md">5 Bathrooms</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="square_foot">square_foot</span>
+<span class="font-label-md">450 m²</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Main Content Area -->
+<div class="lg:col-span-8 space-y-16">
+<!-- Description -->
+<section>
+<h2 class="font-headline-md text-3xl text-slate-800 mb-6">Unrivaled Coastal Elegance</h2>
+<p class="font-body-lg text-on-surface-variant leading-relaxed">
+                        Nestled on the sun-drenched cliffs of the Amalfi Coast, Villa Sapphire is a masterwork of contemporary Mediterranean architecture. Designed to erase the boundaries between indoor luxury and the vast blue horizon, every room offers panoramic views of the sea. The villa features a minimalist aesthetic with natural limestone floors, artisanal wood finishes, and a curated collection of modern art that complements the surrounding natural beauty.
+                    </p>
+<p class="font-body-lg text-on-surface-variant leading-relaxed mt-4">
+                        Whether you're lounging by the infinity pool, hosting a private chef's dinner in the gourmet kitchen, or retreating to the spa-like sanctuary of the master suite, Villa Sapphire provides an atmosphere of absolute tranquility and refined sophistication.
+                    </p>
+</section>
+<!-- Gallery Bento Grid -->
+<section>
+<h2 class="font-headline-md text-2xl text-slate-800 mb-8">Visual Journey</h2>
+<div class="grid grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Living Area" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="An interior shot of a spacious, high-end living room in a tropical villa. The space features white marble floors, beige linen sofas, and a large abstract painting on the wall. Massive glass sliding doors are open to a terrace with palm trees and ocean views. The lighting is bright and natural, reflecting a clean, minimalist, and serene luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZXqN91H3P3-Vjgalhy31nNmS3sEzCX_AsaIRNrTCA7GyangDApYY9BPr3uFofCcIGQwFmHAUxjp-dnRtyB09DShLVpZNvH1JRvOgRHE-LTCSXijQ3PsWwL5qc6ouqqdvVvIDE9PboZrJprGUJncrWezDQQntLVzSbVVkUsASMsrFUDqjZ1Fmr8IBszHd0ed8dKOzOYvmd2ibMH5pd8LjhgGZ39iXg6o5SvNcLnX6YQNeXhSKErTndONHbb7bIoeNUrg7aP7Cm_Ail"/>
+</div>
+<div class="col-span-2 row-span-1 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Bedroom View" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A luxurious master bedroom with a king-sized bed facing a floor-to-ceiling window that looks out over the ocean at sunrise. The decor is minimalist with light oak wood accents and soft white textiles. Gentle morning light fills the room, creating a peaceful and airy atmosphere consistent with a high-end retreat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-XigCexmh-DkcfCWL5gC0k6wXFIwUeQlXx4XvKi-iZsH8MEkUY_X9YYYsxmAT_s1N6VG6d1Hobu8DHiRyZXiYhGQcRs3dcaitwpyOgBCA6lPU2HcIpO5Q8pPpDE3tUzvS0Aha3v9rKueOMeCBZFG6rxE95O4CJf4w9J3-qtkYj7jhSjA-jbOG70tBAoxzv1jo65VytGIz7eDqTkXrkrT6BM7e76yCKk9gOkczJZUfToiIBdlNicJeq2AW_KmKZyBfxrnvZu0gTQU3"/>
+</div>
+<div class="col-span-1 row-span-1 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Gourmet Kitchen" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A state-of-the-art designer kitchen with a massive marble island and professional-grade appliances. The cabinetry is dark sleek wood, contrasting with the bright, sun-filled room. A vase of fresh white lilies sits on the counter, emphasizing the clean, upscale, and organized environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWEiD4AWQnp9a3bJaZ3YEtUVeO66Ia8bO_AChHKS-wAlsZu_tapZuthymVmTJDG_ZDzXdU0E13pNXAe8FiiXEz7PH6F_YHnbUDTa9gi8lSSUglZ9MRCu6eEhLW60-VRPFjSdTNWysup4KsoN47SKzaKYNGhuODc0KoYbVoMUlre8Ph7ZUKYFgNSuh6A_HNT847uiqW8ExYZ9MB_s0XrdAxIhZmLFX1wNodHjoPXF5Tzajgi4ZW6hhC6HKpZ001gbLfLy0pKMSDUeRt"/>
+</div>
+<div class="col-span-1 row-span-1 rounded-2xl overflow-hidden shadow-sm">
+<img alt="Spa Bathroom" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A spa-like bathroom featuring a deep freestanding soaking tub positioned next to a large window with a view of a private tropical garden. The walls are clad in light-colored stone, and the lighting is soft and recessed. The scene is one of ultimate relaxation and modern luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlTEaW6HbcDCD8lbc7ydfXHMk4-LHuoZBDRAX94DAu4ll0DTFlkZkeoAjmGPdjE9oxxJWUvqLS-17kJvUuvpQ6fzzL7ysMoLJ6d7YAlLPN2AraBcQSfWsb7Y6Pgk0ErVi9CnZqI1PZK4ylL4wpum4gvtoEv4xvAK5nvL28tiMWfFO7s6JdZbFF6bFhs-MCyWSFghUqEprLAHsleenbt_i-SlHY3EzNNTaFKqdxTFP6aZVGZrytHQCoF9v-0bP0Nv6q2riUnRphg3Cq"/>
+</div>
+</div>
+</section>
+<!-- Amenities & Services -->
+<section>
+<h2 class="font-headline-md text-2xl text-slate-800 mb-8">Amenities &amp; Services</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="pool">pool</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Private Pool</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="restaurant">restaurant</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Gourmet Kitchen</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="concierge">concierge</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Butler Service</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="wifi">wifi</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">High-Speed WiFi</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="skillet">skillet</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Private Chef</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="local_parking">local_parking</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Free Parking</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="ac_unit">ac_unit</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Climate Control</span>
+</div>
+<div class="flex flex-col items-center p-6 bg-surface-container-low rounded-2xl group hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-sky-600 mb-4 group-hover:text-white" data-icon="fitness_center">fitness_center</span>
+<span class="font-label-md text-slate-700 group-hover:text-white">Private Gym</span>
+</div>
+</div>
+</section>
+<!-- Availability Calendar Placeholder -->
+<section>
+<h2 class="font-headline-md text-2xl text-slate-800 mb-8">Availability &amp; Rates</h2>
+<div class="bg-surface-container-lowest rounded-3xl border border-outline-variant/30 overflow-hidden">
+<div class="grid grid-cols-7 border-b border-outline-variant/30 text-center bg-surface-container-low">
+<div class="py-4 font-label-md text-slate-500">Mon</div>
+<div class="py-4 font-label-md text-slate-500">Tue</div>
+<div class="py-4 font-label-md text-slate-500">Wed</div>
+<div class="py-4 font-label-md text-slate-500">Thu</div>
+<div class="py-4 font-label-md text-slate-500">Fri</div>
+<div class="py-4 font-label-md text-slate-500">Sat</div>
+<div class="py-4 font-label-md text-slate-500">Sun</div>
+</div>
+<div class="grid grid-cols-7 text-center">
+<div class="py-8 border-r border-b border-outline-variant/10 text-slate-300">28</div>
+<div class="py-8 border-r border-b border-outline-variant/10 text-slate-300">29</div>
+<div class="py-8 border-r border-b border-outline-variant/10 text-slate-300">30</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-error/5 text-error font-semibold">1</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-error/5 text-error font-semibold">2</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-error/5 text-error font-semibold">3</div>
+<div class="py-8 border-b border-outline-variant/10 bg-error/5 text-error font-semibold">4</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">5</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">6</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">7</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">8</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">9</div>
+<div class="py-8 border-r border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">10</div>
+<div class="py-8 border-b border-outline-variant/10 bg-primary/5 text-primary font-bold">11</div>
+<!-- ... rest of the days ... -->
+<div class="py-8 border-r border-outline-variant/10">12</div>
+<div class="py-8 border-r border-outline-variant/10">13</div>
+<div class="py-8 border-r border-outline-variant/10">14</div>
+<div class="py-8 border-r border-outline-variant/10">15</div>
+<div class="py-8 border-r border-outline-variant/10">16</div>
+<div class="py-8 border-r border-outline-variant/10">17</div>
+<div class="py-8">18</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Booking Sidebar -->
+<aside class="lg:col-span-4">
+<div class="sticky top-32 glass-panel p-8 rounded-3xl border border-sky-100 shadow-[0_40px_100px_rgba(0,74,153,0.08)]">
+<div class="flex justify-between items-end mb-8">
+<div>
+<span class="text-3xl font-headline-md text-slate-800">$1,850</span>
+<span class="text-slate-500 font-label-md"> / night</span>
+</div>
+<div class="flex items-center text-sky-600 gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="text-slate-400 font-normal">(12 reviews)</span>
+</div>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="block font-label-md text-slate-700">Check-in / Check-out</label>
+<div class="flex bg-white rounded-xl border border-outline-variant overflow-hidden">
+<div class="flex-1 p-4 border-r border-outline-variant">
+<span class="block text-[10px] uppercase tracking-wider text-slate-400 font-bold">Arrive</span>
+<input class="w-full border-none p-0 focus:ring-0 text-slate-800 font-medium" type="text" value="Oct 12, 2024"/>
+</div>
+<div class="flex-1 p-4">
+<span class="block text-[10px] uppercase tracking-wider text-slate-400 font-bold">Depart</span>
+<input class="w-full border-none p-0 focus:ring-0 text-slate-800 font-medium" type="text" value="Oct 19, 2024"/>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label-md text-slate-700">Guests</label>
+<div class="bg-white rounded-xl border border-outline-variant p-4 flex justify-between items-center">
+<span class="text-slate-800 font-medium">4 Adults, 2 Children</span>
+<span class="material-symbols-outlined text-slate-400" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</div>
+</div>
+<div class="pt-4 space-y-4">
+<div class="flex justify-between text-slate-600">
+<span>$1,850 x 7 nights</span>
+<span>$12,950</span>
+</div>
+<div class="flex justify-between text-slate-600">
+<span>Service fee</span>
+<span>$450</span>
+</div>
+<div class="flex justify-between text-slate-600">
+<span>Tourism tax</span>
+<span>$120</span>
+</div>
+<hr class="border-outline-variant/30"/>
+<div class="flex justify-between text-slate-800 font-bold text-xl">
+<span>Total</span>
+<span>$13,520</span>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-5 rounded-xl font-headline-md text-lg hover:shadow-xl transition-all active:scale-[0.98]" type="submit">
+                            Confirm Booking
+                        </button>
+</form>
+<p class="text-center text-slate-400 text-xs mt-6">No payment charged until confirmation from host</p>
+</div>
+</aside>
+</div>
+<!-- You Might Also Like -->
+<section class="mt-24 mb-16">
+<h2 class="font-headline-md text-3xl text-slate-800 mb-12">Similar Villa Retreats</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6">
+<img alt="Villa Emerald" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A lush tropical villa surrounded by dense emerald green foliage and exotic flowers. The house is built with natural dark wood and has a thatched roof, blending perfectly with the jungle environment. A small turquoise plunge pool sits in the foreground under the dappled sunlight of a warm afternoon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy6KerUmfsZPbmxns4csXU1yCgv-jjwiACzlc4rwunSnpTwVJ0PBQFjXTxD2bRE85FgUiVAKHz3q7MsTKEpGA1wATvN-uRLa_8oJcIMTCXrruTRERKWPx6WXk8A4I9ShAlR8nxF-3V7N8793EjU1MHA_XrgbGJdz_1oWMGKjSxFEkuHgvxhkdOPj2FIupo3V6NqNfLjjwrwamJNOn6WDi-GGl2d4sjqt9AKJyecUq0FToe-Oi-fmvgtKpAX_SKUeBk-LameRuK-26J"/>
+<div class="absolute top-4 right-4 glass-panel px-4 py-2 rounded-full font-label-md text-sky-700">$1,400/night</div>
+</div>
+<h3 class="font-headline-md text-xl text-slate-800 group-hover:text-sky-600 transition-colors">Villa Emerald - Jungle Oasis</h3>
+<p class="text-slate-500 font-label-md mt-2">Ubud, Bali • 3 BR • 6 Guests</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6">
+<img alt="Villa Pearl" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A striking white-washed villa on a Greek island cliffside, overlooking a deep blue sea under a cloudless sky. The design is classic Cycladic with soft rounded edges and bright blue shutters. A series of stone steps leads down to a private sun terrace with white linen umbrellas and comfortable lounge chairs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNZGRxgue70sZ74yVYjAXy8a4u4QE8uDvULPzm_e7z7g6h1oxl0JU9W_9GFb6tRHUJhZT2fqCSCPgiQBTW22mo_fNrYgDjffOOXphis9udbrw85NN-zzbLnTetWP8eKEUkg4I0sz-VuPWP_2VANg9CstH_4XUaLB5QBnhluFy0dr1xVv1BjesX8qIxpK2zEKWYxDNP7gc7RfFqda9e_zY597DAKQhZrC-CC4XRrUxmgLi45p6LiKANFBpA2-LS7Sj4WpeEQLhU7QKl"/>
+<div class="absolute top-4 right-4 glass-panel px-4 py-2 rounded-full font-label-md text-sky-700">$2,100/night</div>
+</div>
+<h3 class="font-headline-md text-xl text-slate-800 group-hover:text-sky-600 transition-colors">Villa Pearl - Cycladic Dream</h3>
+<p class="text-slate-500 font-label-md mt-2">Santorini, Greece • 5 BR • 10 Guests</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/3] rounded-3xl overflow-hidden mb-6">
+<img alt="Villa Amber" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="An ultra-modern luxury villa in the desert, featuring rammed earth walls and massive glass panels that reflect the golden sand dunes and orange sunset sky. The architecture is sharp and geometric, integrated into the arid landscape with a long, thin lap pool that mirrors the fiery colors of the twilight sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFK2Zp_nz6x6Obgnsmf4FWlaaT2t9Rym5JiEK85nB5y_OEC-VyJNu51EDSaIaMjXXAkwRo9asfMatkrBTBizg3uXlRTgxxjNtxqJ-dC-LM6reHs1thYmOZ8Hj9Hy7jOADG-1swRrYzsOAUxsas0GG5qjRbQwterWIzxiSoutGrxC7x8L9Y8iL8R3agKjLyptNiy0zyrKTsTP8rNuJshXuhdVK8md0CgzckojAqmgd_uoCPssD5XHF6-KQNZ8fwALAHiorMDtZjjkZP"/>
+<div class="absolute top-4 right-4 glass-panel px-4 py-2 rounded-full font-label-md text-sky-700">$1,650/night</div>
+</div>
+<h3 class="font-headline-md text-xl text-slate-800 group-hover:text-sky-600 transition-colors">Villa Amber - Desert Solace</h3>
+<p class="text-slate-500 font-label-md mt-2">Palm Springs, CA • 4 BR • 8 Guests</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 mt-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full">
+<div class="col-span-1 md:col-span-1">
+<span class="text-3xl font-bold text-sky-600 font-headline-lg mb-6 block">Anna Villa</span>
+<p class="font-body-md text-slate-500">Exquisite luxury retreats for the discerning traveler. Experience serenity in the world's most beautiful destinations.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-lg mb-6 text-slate-800">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-sky-500 hover:underline decoration-sky-500/30 underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-sky-500 hover:underline decoration-sky-500/30 underline-offset-4 transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-sky-500 hover:underline decoration-sky-500/30 underline-offset-4 transition-all" href="#">Sustainability</a></li>
+<li><a class="text-slate-500 hover:text-sky-500 hover:underline decoration-sky-500/30 underline-offset-4 transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-lg mb-6 text-slate-800">Destinations</h4>
+<ul class="space-y-4 text-slate-500">
+<li>Amalfi Coast</li>
+<li>Santorini</li>
+<li>Bali</li>
+<li>Costa Rica</li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-md text-lg mb-6 text-slate-800">Follow Us</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-sky-600 hover:bg-sky-50 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-sky-600 hover:bg-sky-50 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-sky-600 hover:bg-sky-50 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 py-8 border-t border-slate-200 text-center">
+<p class="font-serif text-slate-500 text-sm">© 2024 Anna Villa Luxury Retreats. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
